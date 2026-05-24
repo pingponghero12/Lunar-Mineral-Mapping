@@ -1,0 +1,2 @@
+DH-MBW-002 - ilmenite BKR1DH002
+SC-EAC-118 - pyrite LASC118

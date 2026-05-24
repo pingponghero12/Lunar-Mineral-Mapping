@@ -1,0 +1,574 @@
+Target_Mineral,SpectrumID,SampleID,PI_Code,SampleName,MinSize_um,MaxSize_um,Texture,Origin
+Fayalite,BKR1AS007,AS-KDH-007,KDH,MatExcel forsterite <80 um,0.0,80.0,Particulate,MatExcel
+Orthopyroxene,BKR1AS008,AS-KDH-008,KDH,MatExcel enstatite <80 um,0.0,80.0,Particulate,MatExcel
+Fayalite,BKR1AS009,AS-KDH-009,KDH,San Carlos olivine <75 um,0.0,75.0,Particulate,"San Carlos, Gila Co., AZ, USA"
+Hematite,BKR1AV002,AV-A1V-002,A1V,71-HBM: 25% hematite + 50% basalt + 25% Mg-sulfate <1 um,0.0,1.0,Particulate Ground Wet-Sorted,
+Quartz,BKR1AV003,AV-A1V-003,A1V,4-FD (1:99): 1% ferrihydrite + 99% silica 5-10 um,0.0,10.0,Particulate Ground Sieved,
+Quartz,BKR1AV004,AV-A1V-004,A1V,5-FD (1:9): 10% ferrihydrite + 90% silica 5-10 um,0.0,10.0,Particulate Ground Sieved,
+Quartz,BKR1AV005,AV-A1V-005,A1V,6-FD (1:1): 50% ferrihydrite + 50% silica 5-10 um,0.0,10.0,Particulate Ground Sieved,
+Quartz,BKR1AV007,AV-A1V-007,A1V,49-Diatomite (silica) <10 um,0.0,10.0,Particulate Ground Sieved,
+Hematite,BKR1AV008,AV-A1V-008,A1V,55a-Hematite <5 um,0.0,5.0,Particulate Ground Sieved,Sigma Aldrich
+Hematite,BKR1AV016,AV-A1V-016,A1V,HB (1:99): 1% hematite + 99% basalt <1 um,0.0,1.0,Particulate Ground Wet-Sorted,
+Hematite,BKR1AV017,AV-A1V-017,A1V,HB (1:9): 10% hematite + 90% basalt <1 um,0.0,1.0,Particulate Ground Wet-Sorted,
+Hematite,BKR1AV018,AV-A1V-018,A1V,HB (1:1): 50% hematite + 50% basalt <1 um,0.0,1.0,Particulate Ground Wet-Sorted,
+Hematite,BKR1AV021,AV-A1V-021,A1V,nHB (1:99): 1% nano-hematite (Sigma Aldrich 544884) + 99% basalt <1 um,0.0,1.0,Particulate Ground Wet-Sorted,
+Hematite,BKR1AV022,AV-A1V-022,A1V,nHB (1:9): 10% nano-hematite (Sigma Aldrich 544884) + 90% basalt <1 um,0.0,1.0,Particulate Ground Wet-Sorted,
+Hematite,BKR1AV023,AV-A1V-023,A1V,nHB (1:2): 33% nano-hematite (Sigma Aldrich 544884) + 67% basalt <1 um,0.0,1.0,Particulate Ground Wet-Sorted,
+Hematite,BKR1AV024,AV-A1V-024,A1V,nHB (1:1): 50% nano-hematite (Sigma Aldrich 544884) + 50% basalt <1 um,0.0,1.0,Particulate Ground Wet-Sorted,
+Hematite,BKR1AV025,AV-A1V-025,A1V,Nano-hematite <50 nm (Sigma Aldrich 544884),0.0,0.05,Particulate Ground Sieved,Sigma Aldrich
+Alunite,F1CC08B,CC-JFM-008-B,JFM,Alunite,25.0,75.0,Particulate,"Marysvale, Utah "
+Alunite,F1CC09B,CC-JFM-009-B,JFM,Alunite,25.0,75.0,Particulate,"Marysvale, Utah "
+Anhydrite,F1CC10B,CC-JFM-010-B,JFM,Anhydrite,25.0,75.0,Particulate,"Ajo, Arizona"
+Jarosite,F1CC11B,CC-JFM-011-B,JFM,Jarosite,25.0,75.0,Particulate,"Dripping Springs Mtn, Gila Co., AZ"
+Gypsum,F1CC16B,CC-JFM-016-B,JFM,Gypsum,25.0,75.0,Particulate,
+Hematite,F1CC17B,CC-JFM-017-B,JFM,Hematite,25.0,75.0,Particulate,
+Fayalite,BKR1CK001,CK-JFM-001,JFM,San Carlos Olivine 38-63 um,38.0,63.0,Particulate Ground Sieved,"San Carlos, NM"
+Fayalite,BKR1CK002,CK-JFM-002,JFM,Globe Olivine 38-63 um,38.0,63.0,Particulate Ground Sieved,"Globe, Arizona"
+Anorthite,BKR1CK003,CK-JFM-003,JFM,Labradorite 38-63 um,38.0,63.0,Particulate Ground Sieved,"Chihuahua, Mexico"
+Anorthite,BKR1CK029,CK-JFM-029,JFM,Bytownite 38-63 um,38.0,63.0,Particulate Ground Sieved,
+Fayalite,BKR1CK058,CK-JFM-058,JFM,JGD1 Olivine Fresh,0.0,45.0,Particulate Ground Sieved,
+Fayalite,BKR1CK059,CK-JFM-059,JFM,JGD2 Olivine 7 min weathering room temp 12/23/15,0.0,45.0,Particulate Ground Sieved,
+Fayalite,BKR1CK060,CK-JFM-060,JFM,JGD3 Olivine 40 min room temp 8/16/16,0.0,45.0,Particulate Ground Sieved,
+Fayalite,BKR1CK061,CK-JFM-061,JFM,"JGD4 Olivine 40+ min room temp, Aliquot 1",0.0,45.0,Particulate Ground Sieved,
+Anorthite,BKR1CK062,CK-JFM-062,JFM,Miyake-jima anorthite <25 um,0.0,25.0,Particulate Ground Sieved,"Miyake Jima, Izu Islands, Japan"
+Anorthite,BKR1CK063,CK-JFM-063,JFM,Miyake-jima anorthite <25 um irradiated with laser for 40 minutes,0.0,25.0,Particulate Ground Sieved,
+Anorthite,BKR1CK064,CK-JFM-064,JFM,Miyake-jima anorthite <25 um + 5% metallic Fe,0.0,25.0,Particulate Ground Sieved,
+Anorthite,BKR1CK065,CK-JFM-065,JFM,Miyake-jima anorthite <25 um + 5% JSC1AF,0.0,25.0,Particulate Ground Sieved,
+Fayalite,NBCM02,CM-CMP-002,CMP,Olivine,0.0,75.0,Particulate,"San Carlos, Ariz"
+Fayalite,BKR1DD065,DD-AHT-065,AHT,NWA2737 olivine <45 um,0.0,45.0,Particulate Sawed Sorted,Northwest Africa
+Fayalite,BKR1DD066,DD-AHT-066,AHT,NWA2737 olivine 45-125 um,45.0,125.0,Particulate Sawed Sorted,Northwest Africa
+Fayalite,BKR1DD109,DD-AHT-109,AHT,"LAP04840,16 olivine <45 um",0.0,45.0,Particulate Ground Sorted,"LaPaz Icefield, Antarctica"
+Fayalite,BKR1DD001,DD-MDD-001,MDD,Chassigny olivine,0.0,0.0,Particulate Unsorted,"Haute Marne, France"
+Fayalite,BKR2DD001,DD-MDD-001,MDD,Chassigny olivine,0.0,0.0,Particulate Unsorted,"Haute Marne, France"
+Fayalite,BKR2DD002,DD-MDD-002,MDD,Chassigny olivine,0.0,50.0,Particulate Ground Unsorted,"Haute Marne, France"
+Orthopyroxene,BKR2DD004,DD-MDD-004,MDD,ALH84001 orthopyroxene,0.0,50.0,Particulate Ground Unsorted,"Allan Hills, Antarctica"
+Fayalite,BKR1DD009,DD-MDD-009,MDD,ALHA77005 olivine (+ px?),0.0,50.0,Particulate Ground Unsorted,"Allan Hills, Antarctica"
+Pigeonite,BKR1DD010,DD-MDD-010,MDD,QUE94201 clinopyroxene,0.0,50.0,Particulate Ground Unsorted,Antarctica
+Fayalite,BKR1DD014,DD-MDD-014,MDD,ALHA77005 dark olivine,0.0,50.0,Particulate Ground Unsorted,"Allan Hills, Antarctica"
+Fayalite,BKR2DD018,DD-MDD-018,MDD,Nakhla olivine (+ augite?),0.0,50.0,Particulate Ground Unsorted,"Abu Hommos, Alexandria, Egypt"
+Fayalite,BKR1DD032,DD-MDD-032,MDD,"ALHA77005,193 olivine (not pure)",0.0,250.0,Particulate,"Allan Hills, Antarctica"
+Fayalite,BKR1DD033,DD-MDD-033,MDD,"ALHA77005,193 olivine (purified)",0.0,250.0,Particulate,"Allan Hills, Antarctica"
+Fayalite,BKR1DD046,DD-MDD-046,MDD,Fayalite,0.0,45.0,Particulate Ground Sorted,Synthetic 
+Fayalite,BKR1DD047,DD-MDD-047,MDD,San Carlos olivine,0.0,0.0,Particulate,"San Carlos, Ariz"
+Fayalite,BKR1DD048,DD-MDD-048,MDD,San Carlos olivine - Laser irradiated,0.0,0.0,Particulate,"San Carlos, Ariz"
+Fayalite,BKR1DD049,DD-MDD-049,MDD,San Carlos olivine - Baked & Laser irradiated,0.0,0.0,Particulate,"San Carlos, Ariz"
+Fayalite,BKR1DD050,DD-MDD-050,MDD,San Carlos olivine - Baked & Laser irradiated,0.0,0.0,Particulate,"San Carlos, Ariz"
+Fayalite,BKR1DD051,DD-MDD-051,MDD,San Carlos olivine - Baked & Laser irradiated,0.0,0.0,Particulate,"San Carlos, Ariz"
+Fayalite,BKR1DD052,DD-MDD-052,MDD,San Carlos olivine,0.0,0.0,Particulate,"San Carlos, Ariz"
+Fayalite,BKR1DD053,DD-MDD-053,MDD,San Carlos olivine - Baked & Laser irradiated,0.0,0.0,Particulate,"San Carlos, Ariz"
+Fayalite,BKR1DD054,DD-MDD-054,MDD,San Carlos olivine - Laser irradiated,0.0,0.0,Particulate,"San Carlos, Ariz"
+Pigeonite,BKR1DD055,DD-MDD-055,MDD,"MIL03346,49 cpx separate <45 um",0.0,45.0,Particulate Ground Sorted,"Miller Range, Antarctica"
+Fayalite,BKR1DD060,DD-MDD-060,MDD,"EETA79001,596 lith-A olivine",0.0,50.0,Particulate Ground Unsorted,"Elephant Moraine, Antarctica"
+Fayalite,BKR1DD062,DD-MDD-062,MDD,Chassigny olivine (desugared),0.0,50.0,Particulate Ground Unsorted,"Haute Marne, France"
+Fayalite,BKR1DD076,DD-MDD-076,MDD,DH-101-B tan olivine,0.0,45.0,Particulate Ground Sorted,
+Fayalite,BKR1DD077,DD-MDD-077,MDD,DH-101-C green olivine,0.0,45.0,Particulate Ground Sorted,
+Fayalite,BKR1DD078,DD-MDD-078,MDD,DH-101-D green olivine,0.0,45.0,Particulate Ground Sorted,
+Fayalite,BKR1DD079,DD-MDD-079,MDD,KBH-94-1 tan olivine,0.0,45.0,Particulate Ground Sorted,
+Fayalite,BKR1DD080,DD-MDD-080,MDD,KBH-94-3 tan olivine,0.0,45.0,Particulate Ground Sorted,
+Fayalite,BKR1DD083,DD-MDD-083,MDD,H30-B4 olivine,0.0,45.0,Particulate Ground Sorted,
+Fayalite,BKR1DD084,DD-MDD-084,MDD,Ki-5-62 olivine,0.0,45.0,Particulate Ground Sorted,
+Fayalite,BKR1DD100,DD-MDD-100,MDD,Mourne Mountains Fayalite,0.0,250.0,Particulate Unsorted,"Mourne Mountains, Ireland"
+Fayalite,BKR1DD101,DD-MDD-101,MDD,St. Peter's Dome Fayalite,0.0,125.0,Particulate Unsorted,"St. Peter's Dome, CO"
+Magnetite,BKR1DD104,DD-MDD-104,MDD,Wustite B <45 um (Magnetite impurity),0.0,45.0,Particulate Ground Sorted,Synthetic 
+Fayalite,BKR1DD121,DD-MDD-121,MDD,"Y-984028,45 interior olivine",0.0,45.0,Particulate Ground Unsorted,"Yamato Mountain Range, Antarctica"
+Fayalite,BKR1DD122,DD-MDD-122,MDD,"Y-984028,74 exterior olivine",0.0,45.0,Particulate Ground Unsorted,"Yamato Mountain Range, Antarctica"
+Pigeonite,BKR1DD127,DD-MDD-127,MDD,Ba-1-61 cpx <45 um,0.0,45.0,Particulate Ground Sorted,"Dish Hill, CA"
+Pigeonite,BKR1DD128,DD-MDD-128,MDD,93406 CPX JH <45 um,0.0,45.0,Particulate Ground Sorted,"HMM Mangani Mine, Sumatra, Indonesia"
+Pigeonite,BKR1DD129,DD-MDD-129,MDD,Ba-2-101-B CPX JH,0.0,45.0,Particulate Ground,"Composite lherzolite, Dish Hill, CA"
+Orthopyroxene,BKR1DD130,DD-MDD-130,MDD,Ba-2-101-B OPX JH,0.0,45.0,Particulate Ground,"Composite lherzolite, Dish Hill, CA"
+Orthopyroxene,BKR1DD131,DD-MDD-131,MDD,Ba-2-101-C OPX JH,0.0,45.0,Particulate Ground,"Composite lherzolite, Dish Hill, CA"
+Orthopyroxene,BKR1DD132,DD-MDD-132,MDD,Ba-2-101-D OPX JH,0.0,45.0,Particulate Ground,"Composite lherzolite, Dish Hill, CA"
+Pigeonite,BKR1DD133,DD-MDD-133,MDD,Ba-2-101-E CPX JH,0.0,45.0,Particulate Ground,"Composite lherzolite, Dish Hill, CA"
+Pigeonite,BKR1DD134,DD-MDD-134,MDD,DH-213 CPX,0.0,120.0,Particulate Ground,"Megacryst, Dish Hill, CA"
+Pigeonite,BKR1DD135,DD-MDD-135,MDD,DH-208 CPX h-isotope,0.0,120.0,Particulate Ground,"Megacryst, Dish Hill, CA"
+Orthopyroxene,BKR1DD136,DD-MDD-136,MDD,DH-101-E OPX,0.0,45.0,Particulate Ground,"Composite lherzolite, Dish Hill, CA"
+Pigeonite,BKR1DD137,DD-MDD-137,MDD,DH-218 CPX,0.0,120.0,Particulate Ground,"Megacryst, Dish Hill, CA"
+Pigeonite,BKR1DD138,DD-MDD-138,MDD,Ep-1-42A CPX JH,0.0,45.0,Particulate Ground,"Composite lherzolite, Kilbourne Hole, NM"
+Pigeonite,BKR1DD139,DD-MDD-139,MDD,Ep-1-42B CPX JH,0.0,45.0,Particulate Ground,"Composite lherzolite, Kilbourne Hole, NM"
+Pigeonite,BKR1DD140,DD-MDD-140,MDD,Ep-3-162 CPX JH,0.0,45.0,Particulate Ground,"Lherzolite, Kilbourne Hole, NM"
+Orthopyroxene,BKR1DD141,DD-MDD-141,MDD,Ep-3-162-OPX JH,0.0,45.0,Particulate Ground,"Lherzolite, Kilbourne Hole, NM"
+Pigeonite,BKR1DD142,DD-MDD-142,MDD,Ep-3-72 CPX,0.0,45.0,Particulate Ground,"Lherzolite, Kilbourne Hole, NM"
+Orthopyroxene,BKR1DD143,DD-MDD-143,MDD,Ep-3-72 OPX,0.0,45.0,Particulate Ground,"Lherzolite, Kilbourne Hole, NM"
+Pigeonite,BKR1DD144,DD-MDD-144,MDD,Ep-3-7A CPX,0.0,45.0,Particulate Ground,"Lherzolite, Kilbourne Hole, NM"
+Pigeonite,BKR1DD145,DD-MDD-145,MDD,Ep-3-7B CPX,0.0,120.0,Particulate Ground,"Lherzolite, Kilbourne Hole, NM"
+Orthopyroxene,BKR1DD146,DD-MDD-146,MDD,GK-7 OPX,0.0,45.0,Particulate Ground,"Lherzolite, Green Knobs, NM"
+Pigeonite,BKR1DD147,DD-MDD-147,MDD,H30-82-8 CPX,0.0,45.0,Particulate Ground,"Spinel lherzolite, Harrat al Kishb, Saudi Arabia"
+Pigeonite,BKR1DD148,DD-MDD-148,MDD,H366-30 Pure CPX,0.0,120.0,Particulate Ground,"Spinel lherzolite, Harrat al Kishb, Saudi Arabia"
+Orthopyroxene,BKR1DD149,DD-MDD-149,MDD,H366-30 Pure OPX,0.0,120.0,Particulate Ground,"Spinel lherzolite, Harrat al Kishb, Saudi Arabia"
+Pigeonite,BKR1DD150,DD-MDD-150,MDD,SC-1-1 CPX (not pyroxene),0.0,120.0,Particulate Ground,
+Orthopyroxene,BKR1DD151,DD-MDD-151,MDD,AARSA OPX,0.0,45.0,Particulate Ground,Locality unknown from AARSA mineral Co.
+Orthopyroxene,BKR1DD153,DD-MDD-153,MDD,Kilosa enstatite,0.0,45.0,Particulate Ground,"Kilosa, Tanzania"
+Orthopyroxene,BKR1DD154,DD-MDD-154,MDD,Zen #1 enstatite,0.0,45.0,Particulate Ground,Locality unknown from Zen Mineral Co.
+Pigeonite,BKR1DD155,DD-MDD-155,MDD,Lindsley pigeonite 1_Wo8_x=20_G,0.0,45.0,Particulate Ground,Don Lindsley Nov. 2016
+Pigeonite,BKR1DD156,DD-MDD-156,MDD,Lindsley pigeonite 2_Wo10_x=20_F,0.0,45.0,Particulate Ground,Don Lindsley Nov. 2016
+Pigeonite,BKR1DD157,DD-MDD-157,MDD,Lindsley pigeonite 3_Wo8_x=30_F,0.0,45.0,Particulate Ground,Don Lindsley Nov. 2016
+Pigeonite,BKR1DD158,DD-MDD-158,MDD,Lindsley pigeonite 4_Wo10_x=30_I,0.0,45.0,Particulate Ground,Don Lindsley Nov. 2016
+Pigeonite,BKR1DD159,DD-MDD-159,MDD,Lindsley pigeonite 5_Wo8_x=40_E,0.0,45.0,Particulate Ground,Don Lindsley Nov. 2016
+Pigeonite,BKR1DD160,DD-MDD-160,MDD,Lindsley pigeonite 6_Wo10_x=40_K,0.0,45.0,Particulate Ground,Don Lindsley Nov. 2016
+Pigeonite,BKR1DD161,DD-MDD-161,MDD,Lindsley pigeonite 7_Wo8_x=55_D,0.0,45.0,Particulate Ground,Don Lindsley Nov. 2016
+Pigeonite,BKR1DD162,DD-MDD-162,MDD,NMNH 117671 pigeonite,0.0,45.0,Particulate Ground,"Goose Creek, VA"
+Orthopyroxene,BKR1DD163,DD-MDD-163,MDD,NMNH 120414-1 enstatite,0.0,45.0,Particulate Ground,"Roding River, Southland, New Zealand"
+Orthopyroxene,BKR1DD164,DD-MDD-164,MDD,NMNH 1218247 opx,0.0,45.0,Particulate Ground,"Heinoloa, Finland"
+Pigeonite,BKR1DD165,DD-MDD-165,MDD,NMNH 134665 cpx,0.0,45.0,Particulate Ground,"Hopen, Austuagov, Lofoten Isl., Norway"
+Orthopyroxene,BKR1DD166,DD-MDD-166,MDD,NMNH 14440 enstatite,0.0,45.0,Particulate Ground,"Styria, Austria"
+Orthopyroxene,BKR1DD167,DD-MDD-167,MDD,NMNH_96617 enstatite,0.0,45.0,Particulate Ground,"Franklin, Corundum Hill, Macon Co., NC"
+Orthopyroxene,BKR1DD168,DD-MDD-168,MDD,"LAP 91900,72 diogenite opx",0.0,0.0,Particulate Handpicked,"LaPaz Ice Field, Antarctica"
+Anorthite,BKR1DH001,DH-MBW-001,MBW,Anorthite 1 <30 um,0.0,30.0,Particulate Ground Sorted,
+Ilmenite,BKR1DH002,DH-MBW-002,MBW,Ilmenite 1 <30 um,0.0,30.0,Particulate Ground Sorted,
+Quartz,BKR1DH003,DH-MBW-003,MBW,Quartz 1 <30 um,0.0,30.0,Particulate Ground Sorted,
+Orthopyroxene,BKR1DH005,DH-MBW-005,MBW,Enstatite 1 <30 um,0.0,30.0,Particulate Ground Sorted,
+Fayalite,BKR1DH006,DH-MBW-006,MBW,Fayalite 1 <30 um,0.0,30.0,Particulate Ground Sorted,
+Fayalite,BKR1DH007,DH-MBW-007,MBW,Forsterite 1 <30 um,0.0,30.0,Particulate Ground Sorted,
+Fayalite,BKR1DH008,DH-MBW-008,MBW,Forsterite 2 40-64 um,30.0,64.0,Particulate Ground Sorted,
+Fayalite,BKR1DH009,DH-MBW-009,MBW,Forsterite 4 64-120 um,64.0,120.0,Particulate Ground Sorted,
+Fayalite,BKR1DH010,DH-MBW-010,MBW,Forsterite 5 120-450 um,120.0,450.0,Particulate Ground Sorted,
+Pigeonite,BKR1DL005,DL-CMP-005,CMP,En 40 Fs 60 (97+% Cpx),0.0,100.0,Particulate Ground Unsorted,Synthetic 
+Pigeonite,BKR1DL005A,DL-CMP-005-A,CMP,En 40 Fs 60 (97+% Cpx) <45 um,0.0,100.0,Particulate Ground Unsorted,Synthetic 
+Orthopyroxene,BKR1DL008A,DL-CMP-008-A,CMP,"Wo 5 En 38 Fs 57 (E36-103, 100% opx) < 45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL009,DL-CMP-009,CMP,"Wo 10 En 45 Fs 45 (EFW5-13: 99.5% cpx, 0.5% glass)",0.0,100.0,Particulate Ground Unsorted,Synthetic 
+Pigeonite,BKR1DL010,DL-CMP-010,CMP,"Wo 10 En 63 Fs 27 (EFW13-4: 100% cpx, trCrist)",0.0,100.0,Particulate Ground Unsorted,Synthetic 
+Pigeonite,BKR1DL010A,DL-CMP-010-A,CMP,"Wo 10 En 63 Fs 27 (EFW13-4, 100% cpx) < 45 um",0.0,45.0,Particulate Ground Unsorted,Synthetic 
+Pigeonite,BKR1DL011,DL-CMP-011,CMP,"Wo 10 En 36 Fs 54 (E35-6: 100% cpx, triCrist)",0.0,100.0,Particulate Ground Unsorted,Synthetic 
+Pigeonite,BKR1DL011A,DL-CMP-011-A,CMP,"Wo 10 En 36 Fs 54 (E35-6, 100% cpx) <45 um",0.0,45.0,Particulate Ground Unsorted,Synthetic 
+Pigeonite,BKR1DL013,DL-CMP-013,CMP,"Wo 8 En 46 Fs 46 (E40-1: 99.5% cpx, 0.5% glass, Crist)",0.0,100.0,Particulate Ground Unsorted,Synthetic 
+Pigeonite,BKR1DL013A,DL-CMP-013-A,CMP,"Wo 8 En 46 Fs 46 (E40-1: 99.5% cpx, 0.5% glass, Crist) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL014A,DL-CMP-014-A,CMP,"Wo 2.5 En 39 Fs 58.5 (E45-100, 95% hyp, 2-5% cpx) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL016,DL-CMP-016,CMP,"Wo 5 En 76 Fs 19 (EFW21-101: 98% Px (Opx+Cpx), 2% glass+Crist)",0.0,100.0,Particulate Ground Unsorted,Synthetic 
+Pigeonite,BKR1DL017A,DL-CMP-017-A,CMP,"Wo 20 En 64 Fs 16 (EFW8-3, 99.5% cpx) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL018A,DL-CMP-018-A,CMP,"Wo 10 En 72 Fs 18 (EFW9-18, 100% cpx) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL019A,DL-CMP-019-A,CMP,"Wo 20 En 56 Fs 24 (EFW12-3, 99.5% cpx) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Fayalite,BKR1DL029A,DL-CMP-029-A,CMP,En 15 Fs 85 (B) (Minor olivine) <45 um,0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL033A,DL-CMP-033-A,CMP,"Wo 50 En 40 Fs 10 (D2-11, 99% cpx, 1% crist) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL043A,DL-CMP-043-A,CMP,"Wo 50 En 40 Fs 10 (D8H2-4, 100% cpx) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL046A,DL-CMP-046-A,CMP,"Wo 15 En 34 Fs 51 (E43-100, 70% cpx) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL047A,DL-CMP-047-A,CMP,"Wo 25 En 30 Fs 45 (E44-101, 95-98% cpx) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL067A,DL-CMP-067-A,CMP,"Wo 30 En 49 Fs 21 (EFW11-4, 95% cpx) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL068A,DL-CMP-068-A,CMP,"Wo 30 En 28 Fs 42 (E33-16, 100% cpx) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL069A,DL-CMP-069-A,CMP,"Wo 35 En 20 Fs 46 (E46-7, 99.7% cpx) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL071A,DL-CMP-071-A,CMP,"Wo 40 En 24 Fs 36 (EFW1-2, 100% cpx) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL073A,DL-CMP-073-A,CMP,"Wo 30 En 35 Fs 35 (EFW3-9, 99% cpx) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL074A,DL-CMP-074-A,CMP,"Wo 30 En 21 Fs 49 (E27-1, 97% cpx) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Pigeonite,BKR1DL081A,DL-CMP-081-A,CMP,"Wo 35 En 26 Fs 39 (E42-106, 100% cpx) <45 um",0.0,45.0,Particulate Ground Sorted,Synthetic 
+Anorthite,BKR1EF02A,EF-CMP-002-A,CMP,EFCM_ChBytownite <25 um,0.0,25.0,Particulate Ground Dry-Sieved,"Chihuahua, Mexico"
+Anorthite,BKR2EF002A,EF-CMP-002-A,CMP,EFCM_ChBytownite <25 um,0.0,25.0,Particulate Ground Dry-Sieved,"Chihuahua, Mexico"
+Anorthite,BKR1EF02B,EF-CMP-002-B,CMP,EFCM_ChBytownite 25-45 um,25.0,45.0,Particulate Ground Wet-Sieved,"Chihuahua, Mexico"
+Anorthite,BKR2EF002B,EF-CMP-002-B,CMP,EFCM_ChBytownite 25-45 um,25.0,45.0,Particulate Ground Wet-Sieved,"Chihuahua, Mexico"
+Anorthite,BKR1EF02C,EF-CMP-002-C,CMP,EFCM_ChBytownite 45-63 um,45.0,63.0,Particulate Ground Wet-Sieved,"Chihuahua, Mexico"
+Anorthite,BKR2EF002C,EF-CMP-002-C,CMP,EFCM_ChBytownite 45-63 um,45.0,63.0,Particulate Ground Wet-Sieved,"Chihuahua, Mexico"
+Anorthite,BKR1EF02D,EF-CMP-002-D,CMP,EFCM_ChBytownite 63-125 um,63.0,125.0,Particulate Ground Wet-Sieved,"Chihuahua, Mexico"
+Anorthite,BKR2EF002D,EF-CMP-002-D,CMP,EFCM_ChBytownite 63-125 um,63.0,125.0,Particulate Ground Wet-Sieved,"Chihuahua, Mexico"
+Anorthite,BKR1EF02E,EF-CMP-002-E,CMP,EFCM_ChBytownite 125-250 um,125.0,250.0,Particulate Ground Wet-Sieved,"Chihuahua, Mexico"
+Anorthite,BKR2EF002E,EF-CMP-002-E,CMP,EFCM_ChBytownite 125-250 um,125.0,250.0,Particulate Ground Wet-Sieved,"Chihuahua, Mexico"
+Fayalite,BKR1EF003A,EF-CMP-003-A,CMP,EFCM_SCOlivine <25 um,0.0,25.0,Particulate Ground Dry-Sieved,"San Carlos, AZ"
+Fayalite,BKR1EF003B,EF-CMP-003-B,CMP,EFCM_SCOlivine 25-45 um,25.0,45.0,Particulate Ground Wet-Sieved,"San Carlos, AZ"
+Fayalite,BKR1EF003C,EF-CMP-003-C,CMP,EFCM_SCOlivine 45-63 um,45.0,63.0,Particulate Ground Wet-Sieved,"San Carlos, AZ"
+Fayalite,BKR1EF003D,EF-CMP-003-D,CMP,EFCM_SCOlivine 63-125 um,63.0,125.0,Particulate Ground Wet-Sieved,"San Carlos, AZ"
+Fayalite,BKR1EF003E,EF-CMP-003-E,CMP,EFCM_SCOlivine 125-250 um,125.0,250.0,Particulate Ground Wet-Sieved,"San Carlos, AZ"
+Fayalite,BKR1EF003F,EF-CMP-003-F,CMP,EFCM_SCOlivine 250-500 um,250.0,500.0,Particulate Ground Wet-Sieved,"San Carlos, AZ"
+Hematite,CAGR04,GR-CMP-004,CMP,Hematite,0.0,56.0,Particulate,"Karnten, Austria"
+Anorthite,BKT1HK007,HK-H1T-007,H1T,Bytownite from Mexico,0.0,0.0,Chip,Mexico
+Anorthite,BKR1HK007A,HK-H1T-007-A,H1T,Bytownite from Mexico <250 um,0.0,250.0,Particulate Ground Sorted,Mexico
+Anorthite,BKR1HK007B,HK-H1T-007-B,H1T,Bytownite from Mexico 250-500 um,250.0,500.0,Particulate Ground Sorted,Mexico
+Ilmenite,BKR1IL007,IL-LPK-007,IPK,Synthetic ilmenite <45 um from Lindsay Keller,0.0,45.0,Particulate Ground Sorted,Synthetic
+Ilmenite,BKR1IL007P,IL-LPK-007-P,IPK,Synthetic ilmenite <45 um pellet pressed at 7000 psi,0.0,45.0,Pellet Shaved,Synthetic
+Ilmenite,BKR1IL007P20,IL-LPK-007-P20,IPK,Synthetic ilmenite <45 um pellet pressed at 7000 psi irradiated with pulse laser at 20 mJ,0.0,45.0,Pellet Shaved,Synthetic
+Ilmenite,BKR1IL005,IL-M1O-005,M1O,Ilmenite 1 (Australia) 75-105 um,75.0,105.0,Particulate Ground Sorted,"Nearshore of N. Stradbroke Island, Queensland, Australia"
+Ilmenite,BKR1IL006,IL-M1O-006,M1O,Ilmenite 2 (Russia) 75-105 um,75.0,105.0,Particulate Ground Sorted,Russia
+Ilmenite,BKR1IL008,IL-PJI-008,PJI,Synthetic ilmenite,0.0,0.0,Particulate,Synthetic
+Ilmenite,BKR2IL008,IL-PJI-008,PJI,Synthetic ilmenite,0.0,0.0,Particulate,Synthetic
+Hematite,892F41,JB-CMP-041,CMP,"Hematite, specular",0.0,0.0,Particulate,
+Jarosite,C1092F53,JB-CMP-053,CMP,Jarosite,0.0,0.0,Particulate,Bolivia 
+Quartz,995F140,JB-CMP-140,CMP,Quartz <25 um (wet),0.0,25.0,Particulate Ground Wet-Sieved,
+Quartz,995F141,JB-CMP-141,CMP,Quartz 25-32 um (wet),25.0,32.0,Particulate Ground Wet-Sieved,
+Quartz,995F142,JB-CMP-142,CMP,Quartz 32-45 um (wet),32.0,45.0,Particulate Ground Wet-Sieved,
+Quartz,995F143,JB-CMP-143,CMP,Quartz 45-63 um (wet),45.0,63.0,Particulate Ground Wet-Sieved,
+Quartz,995F144,JB-CMP-144,CMP,Quartz 63-90 um (wet),63.0,90.0,Particulate Ground Wet-Sieved,
+Quartz,995F145,JB-CMP-145,CMP,Quartz 90-125 um (wet),90.0,125.0,Particulate Ground Wet-Sieved,
+Quartz,995F146,JB-CMP-146,CMP,Quartz 125-180 um (wet),125.0,180.0,Particulate Ground Wet-Sieved,
+Quartz,995F147,JB-CMP-147,CMP,Quartz 180-250 um (wet),180.0,250.0,Particulate Ground Wet-Sieved,
+Quartz,995F148,JB-CMP-148,CMP,Quartz 250-355 um (wet),250.0,355.0,Particulate Ground Wet-Sieved,
+Quartz,995F149,JB-CMP-149,CMP,Quartz 355-500 um (wet),355.0,500.0,Particulate Ground Wet-Sieved,
+Quartz,995F150,JB-CMP-150,CMP,Quartz <25 um (dry),0.0,25.0,Particulate Ground Dry-Sieved,
+Quartz,995F151,JB-CMP-151,CMP,Quartz 25-32 um (dry),25.0,32.0,Particulate Ground Dry-Sieved,
+Quartz,995F152,JB-CMP-152,CMP,Quartz 32-45 um (dry),32.0,45.0,Particulate Ground Dry-Sieved,
+Quartz,995F153,JB-CMP-153,CMP,Quartz 45-63 um (dry),45.0,63.0,Particulate Ground Dry-Sieved,
+Quartz,995F154,JB-CMP-154,CMP,Quartz 63-90 um (dry),63.0,90.0,Particulate Ground Dry-Sieved,
+Quartz,995F155,JB-CMP-155,CMP,Quartz 90-125 um (dry),90.0,125.0,Particulate Ground Dry-Sieved,
+Quartz,995F156,JB-CMP-156,CMP,Quartz 125-180 um (dry),125.0,180.0,Particulate Ground Dry-Sieved,
+Hematite,1096F184,JB-JLB-184,JLB,Hematite+Clay,0.0,0.0,Bulk,Atlantis Deep 
+Akaganeite,397F212D,JB-JLB-212,JLB,Akaganeite (SAK-1),0.0,0.0,Particulate,
+Akaganeite,397F212W,JB-JLB-212,JLB,Akaganeite (SAK-1),0.0,0.0,Particulate,
+Fayalite,397F214P,JB-JLB-214-P,JLB,Olivine <45 um,0.0,45.0,Particulate Sorted,
+Apatite,397F224,JB-JLB-224,JLB,OH-apatite,0.0,0.0,Particulate,
+Apatite,BKR1JB273A,JB-JLB-273-A,JLB,Light-green fluorapatite <45 um,0.0,45.0,Particulate,"Durango, Mexico"
+Apatite,BKR1JB273D,JB-JLB-273-D,JLB,Light-green fluorapatite crystals,1000.0,10000.0,Particulate,"Durango, Mexico"
+Apatite,BKR1JB274A,JB-JLB-274-A,JLB,Dark-green fluorapatite <45 um,0.0,45.0,Particulate,"Durango, Mexico"
+Apatite,BKR1JB274D,JB-JLB-274-D,JLB,Dark-green fluorapatite crystals,1000.0,10000.0,Particulate,"Durango, Mexico"
+Apatite,BKR1JB275A,JB-JLB-275-A,JLB,Partly-reddish fluorapatite <45 um,0.0,45.0,Particulate,"Durango, Mexico"
+Apatite,BKR1JB275D,JB-JLB-275-D,JLB,Partly-reddish fluorapatite crystals,1000.0,5000.0,Particulate,"Durango, Mexico"
+Apatite,BKR1JB320,JB-JLB-320,JLB,Apatite <90 um,0.0,90.0,Particulate Ground,
+Apatite,BKR1JB322,JB-JLB-322,JLB,Apatite 125-180 um,125.0,180.0,Particulate Ground,
+Apatite,BKR1JB324,JB-JLB-324,JLB,Apatite 250-355 um,250.0,355.0,Particulate Ground,
+Jarosite,BKR1JB440,JB-JLB-440,JLB,Na-Jarosite,0.0,45.0,Particulate Ground Dry-Sieved,Kodama collection #A208
+Jarosite,BKR1JB441,JB-JLB-441,JLB,K-Jarosite,0.0,45.0,Particulate Ground Dry-Sieved,Kodama collection #A210
+Alunite,BKR1JB444,JB-JLB-444,JLB,K-alunite,0.0,45.0,Particulate Ground Dry-Sieved,Kodama collection #161
+Alunite,BKR1JB446,JB-JLB-446,JLB,Na-alunite,0.0,45.0,Particulate Ground Dry-Sieved,Kodama collection #163
+Alunite,BKR2JB446,JB-JLB-446,JLB,Na-alunite,0.0,45.0,Particulate Ground Dry-Sieved,Kodama collection #163
+Pigeonite,BKR1JB487,JB-JLB-487,JLB,M3 Clinopyroxene <25 um,0.0,25.0,Particulate Ground Dry-Sieved ,Norway
+Pigeonite,BKR1JB488,JB-JLB-488,JLB,M3 Clinopyroxene 25-45 um,25.0,45.0,Particulate Ground Wet-Sieved ,Norway
+Pigeonite,BKR1JB489,JB-JLB-489,JLB,M3 Clinopyroxene 45-63 um,45.0,63.0,Particulate Ground Wet-Sieved ,Norway
+Pigeonite,BKR1JB490,JB-JLB-490,JLB,M3 Clinopyroxene 63-90 um,63.0,90.0,Particulate Ground Wet-Sieved ,Norway
+Pigeonite,BKR1JB491,JB-JLB-491,JLB,M3 Clinopyroxene 90-125 um,90.0,125.0,Particulate Ground Wet-Sieved ,Norway
+Pigeonite,BKR1JB492,JB-JLB-492,JLB,M3 Clinopyroxene 125-250 um,125.0,250.0,Particulate Ground Wet-Sieved ,Norway
+Pigeonite,BKR1JB493,JB-JLB-493,JLB,M3 Clinopyroxene 250-500 um,250.0,500.0,Particulate Ground Wet-Sieved ,Norway
+Gypsum,1101F556,JB-JLB-556,JLB,Lane gypsum <63,0.0,63.0,Particulate Ground,
+Gypsum,BKR1JB556,JB-JLB-556,JLB,Lane gypsum <63,0.0,63.0,Particulate Ground,
+Gypsum,LOFF556,JB-JLB-556,JLB,Lane gypsum <63,0.0,63.0,Particulate Ground,
+Gypsum,1101F557,JB-JLB-557,JLB,Lane gypsum 63-90,63.0,90.0,Particulate Ground,
+Gypsum,BKR1JB557,JB-JLB-557,JLB,Lane gypsum 63-90,63.0,90.0,Particulate Ground,
+Gypsum,LOFF557,JB-JLB-557,JLB,Lane gypsum 63-90,63.0,90.0,Particulate Ground,
+Hematite,BKR1JB588,JB-JLB-588,JLB,Antigorite 85 wt% + Mg-carbonate 5 wt% + Hematite 10 wt%,0.0,125.0,Particulate Ground Dry-Sieved,JB563 (antigorite) 85 wt% + JB590 (Mg-carbonate) 5 wt% + JB129 (hematite) 10 wt%
+Hematite,BKR1JB589,JB-JLB-589,JLB,Antigorite 88 wt% + Mg-carbonate 2 wt% + Hematite 10 wt%,0.0,125.0,Particulate Ground Dry-Sieved,JB563 (antigorite) 85 wt% + JB590 (Mg-carbonate) 2 wt% + JB129 (hematite) 10 wt%
+Anhydrite,BKR1JB641A,JB-JLB-641-A,JLB,DD102 anhydrite,0.0,45.0,Particulate Ground Dry-Sieved,Purchased
+Hematite,BKR1JB707A,JB-JLB-707-A,JLB,Synthetic hematite,0.0,1.0,Particulate Ground Sorted,Synthetic
+Hematite,BKR1JB707B,JB-JLB-707-B,JLB,Synthetic hematite,0.0,1.0,Particulate Ground Sorted,Synthetic
+Hematite,BKR1JB708,JB-JLB-708,JLB,Synthetic hematite,0.0,10.0,Particulate Ground Sorted,Synthetic
+Jarosite,BKR1JB709,JB-JLB-709,JLB,Jarosite <125 um,0.0,125.0,Particulate Ground Sorted,E. Murad
+Jarosite,BKR1JB752,JB-JLB-752,JLB,Synthetic jarosite A,0.0,125.0,Particulate Sorted,Synthetic by L. Basciano
+Jarosite,BKR1JB753,JB-JLB-753,JLB,Synthetic jarosite B,0.0,125.0,Particulate Sorted,Synthetic by L. Basciano
+Jarosite,BKR1JB754,JB-JLB-754,JLB,Synthetic jarosite C,0.0,125.0,Particulate Sorted,Synthetic by L. Basciano
+Jarosite,BKR1JB755,JB-JLB-755,JLB,Synthetic jarosite D,0.0,125.0,Particulate Sorted,Synthetic by L. Basciano
+Jarosite,BKR1JB756,JB-JLB-756,JLB,Synthetic jarosite E,0.0,125.0,Particulate Sorted,Synthetic by L. Basciano
+Jarosite,BKR1JB757,JB-JLB-757,JLB,Synthetic jarosite F,0.0,125.0,Particulate Sorted,Synthetic by L. Basciano
+Jarosite,BKR1JB758,JB-JLB-758,JLB,Synthetic jarosite G,0.0,125.0,Particulate Sorted,Synthetic by L. Basciano
+Jarosite,BKR1JB759,JB-JLB-759,JLB,Synthetic jarosite H,0.0,125.0,Particulate Sorted,Synthetic by L. Basciano
+Jarosite,BKR1JB760,JB-JLB-760,JLB,Synthetic jarosite I,0.0,125.0,Particulate Sorted,Synthetic by L. Basciano
+Hematite,BKR1JB763,JB-JLB-763,JLB,Nanophase hematite,0.0,5.0,Particulate,Synthetic by Aldrich
+Magnetite,BKR1JB764,JB-JLB-764,JLB,Magnetite,0.0,5.0,Particulate,Synthetic by Aldrich
+Magnetite,BKR1JB806,JB-JLB-806,JLB,50 wt% magnetite (JB764) + 50 wt% maghemite (JB301) <125 um,0.0,125.0,Particulate Sorted,
+Hematite,BKR1JB807,JB-JLB-807,JLB,50 wt% magnetite (JB764) fine + 50 wt% hematite (JB763) <5 um,0.0,5.0,Particulate Sorted,
+Magnetite,BKR1JB810,JB-JLB-810,JLB,50 wt% ferrihydrite (JB499) <125 um + 50 wt% magnetite (JB764) fine,0.0,125.0,Particulate Sorted,
+Magnetite,BKR1JB811,JB-JLB-811,JLB,75 wt% ferrihydrite (JB499) <125 um + 25 wt% magnetite (JB764) fine,0.0,125.0,Particulate Sorted,
+Hematite,BKR1JB812,JB-JLB-812,JLB,50 wt% ferrihydrite (JB499) <125 um + 50 wt% hematite (JB763) <5 um,0.0,125.0,Particulate Sorted,
+Hematite,BKR1JB813,JB-JLB-813,JLB,75 wt% ferrihydrite (JB499) <125 um + 25 wt% hematite (JB764) <5 um,0.0,125.0,Particulate Sorted,
+Hematite,BKR1JB814,JB-JLB-814,JLB,40 wt% ferrihydrite (JB499) <125 um + 20 wt% hematite (JB763) <5 um + 20 wt% magnetite (JB764) fine + 20 wt% maghemite (JB301) <125 um,0.0,125.0,Particulate Sorted,
+Fayalite,BKR1JB945A,JB-JLB-945-A,JLB,Forsterite <125 um,0.0,125.0,Particulate Ground Dry-Sieved,Ward's
+Fayalite,BKR1JB945B,JB-JLB-945-B,JLB,Forsterite >125 um,125.0,250.0,Particulate Ground,"San Carlos, AZ"
+Fayalite,BKR1JB945C,JB-JLB-945-C,JLB,Forsterite coarse crystals,0.0,0.0,Crystal,"San Carlos, AZ"
+Fayalite,BKR1JB945D,JB-JLB-945-D,JLB,Forsterite <125 um,0.0,125.0,Particulate Ground Dry-Sieved,"San Carlos, AZ"
+Fayalite,BKR1JB954,JB-JLB-954,JLB,75 wt% magnesite (JB946E) + 25 wt% forsterite (JB945A),0.0,125.0,Particulate Sorted,
+Fayalite,BKR1JB955,JB-JLB-955,JLB,50 wt% magnesite (JB946E) + 50 wt% forsterite (JB945A),0.0,125.0,Particulate Sorted,
+Fayalite,BKR1JB956,JB-JLB-956,JLB,25 wt% magnesite (JB946E) + 75 wt% forsterite (JB945A),0.0,125.0,Particulate Sorted,
+Fayalite,BKR1JB957,JB-JLB-957,JLB,10 wt% magnesite (JB946E) + 90 wt% forsterite (JB945A),0.0,125.0,Particulate Sorted,
+Fayalite,BKR1JB958,JB-JLB-958,JLB,90 wt% magnesite (JB946E) + 10 wt% forsterite (JB945A),0.0,125.0,Particulate Sorted,
+Fayalite,BKR1JB959,JB-JLB-959,JLB,75 wt% nontronite (JB790A) + 25 wt% forsterite (JB945A),0.0,125.0,Particulate Sorted,
+Fayalite,BKR1JB960,JB-JLB-960,JLB,75 wt% nontronite (JB790A) + 25 wt% forsterite (JB945A),0.0,125.0,Particulate Sorted,
+Fayalite,BKR1JB961,JB-JLB-961,JLB,50 wt% nontronite (JB790A) + 50 wt% forsterite (JB945A),0.0,125.0,Particulate Sorted,
+Fayalite,BKR1JB962,JB-JLB-962,JLB,25 wt% nontronite (JB790A) + 75 wt% forsterite (JB945A),0.0,125.0,Particulate Sorted,
+Fayalite,BKR1JB963,JB-JLB-963,JLB,10 wt% nontronite (JB790A) + 90 wt% forsterite (JB945A),0.0,125.0,Particulate Sorted,
+Fayalite,BKR1JB964,JB-JLB-964,JLB,90 wt% nontronite (JB790A) + 10 wt% forsterite (JB945A),0.0,125.0,Particulate Sorted,
+Fayalite,BKR1JB965,JB-JLB-965,JLB,25 wt% magnesite (JB946E) + 25 wt% nontronite (JB790A) + 50 wt% forsterite (JB945A),0.0,125.0,Particulate Sorted,
+Fayalite,BKR1JB966,JB-JLB-966,JLB,40 wt% magnesite (JB946E) + 40 wt% nontronite (JB790A) + 20 wt% forsterite (JB945A),0.0,125.0,Particulate Sorted,
+Fayalite,BKR1JB967,JB-JLB-967,JLB,60 wt% magnesite (JB946E) + 20 wt% nontronite (JB790A) + 20 wt% forsterite (JB945A),0.0,125.0,Particulate Sorted,
+Fayalite,BKR1JB968,JB-JLB-968,JLB,70 wt% magnesite (JB946E) + 10 wt% nontronite (JB790A) + 20 wt% forsterite (JB945A),0.0,125.0,Particulate Sorted,
+Jarosite,BKR1JB991,JB-JLB-991,JLB,Rublev jarosite <125 um,0.0,125.0,Crushed Dry-Sieved,Rublev Colours standards
+Hematite,BKR1JB993,JB-JLB-993,JLB,Rublev hematite <125 um,0.0,125.0,Crushed Dry-Sieved,Rublev Colours standards
+Orthopyroxene,BKR1JBA14A,JB-JLB-A14-A,JLB,Enstatite dark <125 um,0.0,125.0,Particulate Ground Dry-Sieved,"Bergen, Norway"
+Orthopyroxene,BKR1JBA14B,JB-JLB-A14-B,JLB,Enstatite dark >125 um,125.0,250.0,Particulate Ground Dry-Sieved,"Bergen, Norway"
+Orthopyroxene,BKR1JBA14C,JB-JLB-A14-C,JLB,Enstatite dark coarse,1000.0,3000.0,Particulate Ground Dry-Sieved,"Bergen, Norway"
+Orthopyroxene,BKR1JBA14D,JB-JLB-A14-D,JLB,Enstatite red coarse,1000.0,7000.0,Particulate Ground Dry-Sieved,"Bergen, Norway"
+Orthopyroxene,BKR1JBA15,JB-JLB-A15,JLB,50 wt% Forsterite (JB945D) + 50 wt% Enstatite (JBA14A),0.0,125.0,Particulate Ground Dry-Sieved,"San Carlos, Arizona and Bergen, Norway"
+Orthopyroxene,BKR1JBA16,JB-JLB-A16,JLB,25 wt% Forsterite (JB945D) + 75 wt% Enstatite (JBA14A),0.0,125.0,Particulate Ground Dry-Sieved,"San Carlos, Arizona and Bergen, Norway"
+Orthopyroxene,BKR1JBA17,JB-JLB-A17,JLB,75 wt% Forsterite (JB945D) + 25 wt% Enstatite (JBA14A),0.0,125.0,Particulate Ground Dry-Sieved,"San Carlos, Arizona and Bergen, Norway"
+Orthopyroxene,BKR1JBA18,JB-JLB-A18,JLB,47.5 wt% Forsterite (JB945D) + 47.5 wt% Enstatite (JBA14A) + 5 wt% graphite (JBA05),0.0,125.0,Particulate Ground Dry-Sieved,"San Carlos, Arizona and Bergen, Norway"
+Orthopyroxene,BKR1JBA19,JB-JLB-A19,JLB,48 wt% Forsterite (JB945D) + 48 wt% Enstatite (JBA14A) + 3-4 wt% graphite (JBA05),0.0,125.0,Particulate Ground Dry-Sieved,"San Carlos, Arizona and Bergen, Norway"
+Pigeonite,BKR1JBA38,JB-JLB-A38,JLB,Pigeonite from G2 basaltic rock 250-500 um,250.0,500.0,Particulate Ground Wet-Sieved,"Wilhelmsbad, Vogelsberg, Germany"
+Pigeonite,BKR1JBA38B,JB-JLB-A38-B,JLB,Pigeonite from G2 basaltic rock 90-125 um,90.0,125.0,Particulate Ground Wet-Sieved,"Wilhelmsbad, Vogelsberg, Germany"
+Pigeonite,BKR1JBA39,JB-JLB-A39,JLB,Pigeonite from G3 basaltic rock 250-500 um,250.0,500.0,Particulate Ground Wet-Sieved,"Brockenheim, Vogelsberg, Germany"
+Jarosite,BKR1JBA78,JB-JLB-A78,JLB,Jarosite MC7 <45 um,0.0,45.0,Particulate,Rublev
+Jarosite,BKR1JBB78,JB-JLB-B78,JLB,Jarosite 134560 <45 um,0.0,45.0,Particulate Sorted,"Belwar Mine, Potosi, Bolivia"
+Jarosite,BKR1JBB79,JB-JLB-B79,JLB,Jarosite 132060 <45 um,0.0,45.0,Particulate Sorted,"Sierra Pena Blanca Aldina, Chihuahua, Mexico"
+Jarosite,BKR1JBB80A,JB-JLB-B80-A,JLB,Jarosite ML-S51 <45 um,0.0,45.0,Particulate Sorted,"Copiapo Jarosite Mine, Dona Ana Co., NM"
+Jarosite,BKR1JBB80B,JB-JLB-B80-B,JLB,Jarosite ML-S51 45-125 um,45.0,125.0,Particulate Sorted,"Copiapo Jarosite Mine, Dona Ana Co., NM"
+Jarosite,BKR1JBB80C,JB-JLB-B80-C,JLB,Jarosite ML-S51 >125 um,125.0,500.0,Particulate Sorted,"Copiapo Jarosite Mine, Dona Ana Co., NM"
+Jarosite,BKR1JBB81,JB-JLB-B81,JLB,Hydronium jarosite R10101 <45 um,0.0,45.0,Particulate Sorted,"Boolcoomattra, South Australia, Australia"
+Jarosite,BKR1JBB82B,JB-JLB-B82-B,JLB,Natrojarosite 95661 45-125 um,45.0,125.0,Particulate Sorted,"Ca. Sunset Mining Claim, 3/4 mile east of McConnico St, 4 miles south Kingman, AZ"
+Jarosite,BKR1JBB82C,JB-JLB-B82-C,JLB,Natrojarosite 95661 >125 um,125.0,500.0,Particulate Sorted,"Ca. Sunset Mining Claim, 3/4 mile east of McConnico St, 4 miles south Kingman, AZ"
+Orthopyroxene,BKR1JBB83A,JB-JLB-B83-A,JLB,Bergen enstatite 20-45 um,20.0,45.0,Particulate Ground Wet-Sieved,"Bergen, Norway"
+Orthopyroxene,BKR1JBB83B,JB-JLB-B83-B,JLB,Bergen enstatite 63-90 um,63.0,90.0,Particulate Ground Wet-Sieved,"Bergen, Norway"
+Orthopyroxene,BKR2JBB83B,JB-JLB-B83-B,JLB,Bergen enstatite 63-90 um,63.0,90.0,Particulate Ground Wet-Sieved,"Bergen, Norway"
+Orthopyroxene,BKR3JBB83B,JB-JLB-B83-B,JLB,Bergen enstatite 63-90 um,63.0,90.0,Particulate Ground Wet-Sieved,"Bergen, Norway"
+Orthopyroxene,BKR1JBB83C,JB-JLB-B83-C,JLB,Bergen enstatite 125-150 um,125.0,150.0,Particulate Ground Wet-Sieved,"Bergen, Norway"
+Orthopyroxene,BKR1JBB83D,JB-JLB-B83-D,JLB,Bergen enstatite <45 um,0.0,45.0,Particulate Ground Wet-Sieved,"Bergen, Norway"
+Orthopyroxene,BKR1JBB83E,JB-JLB-B83-E,JLB,Bergen enstatite 45-125 um,45.0,125.0,Particulate Ground Wet-Sieved,"Bergen, Norway"
+Orthopyroxene,BKR1JBB88,JB-JLB-B88,JLB,1 wt% SapCap-1 + 99 wt% Bergen enstatite (63-90 um),63.0,90.0,Particulate Dry-Sieved,"CMS-SCR and Bergen, Norway"
+Orthopyroxene,BKR2JBB88,JB-JLB-B88,JLB,1 wt% SapCap-1 + 99 wt% Bergen enstatite (63-90 um),63.0,90.0,Particulate Dry-Sieved,"CMS-SCR and Bergen, Norway"
+Orthopyroxene,BKR1JBB89,JB-JLB-B89,JLB,3 wt% SapCap-1 + 97 wt% Bergen enstatite (63-90 um),63.0,90.0,Particulate Dry-Sieved,"CMS-SCR and Bergen, Norway"
+Orthopyroxene,BKR2JBB89,JB-JLB-B89,JLB,3 wt% SapCap-1 + 97 wt% Bergen enstatite (63-90 um),63.0,90.0,Particulate Dry-Sieved,"CMS-SCR and Bergen, Norway"
+Orthopyroxene,BKR1JBB90,JB-JLB-B90,JLB,5 wt% SapCap-1 + 95 wt% Bergen enstatite (63-90 um),63.0,90.0,Particulate Dry-Sieved,"CMS-SCR and Bergen, Norway"
+Orthopyroxene,BKR2JBB90,JB-JLB-B90,JLB,5 wt% SapCap-1 + 95 wt% Bergen enstatite (63-90 um),63.0,90.0,Particulate Dry-Sieved,"CMS-SCR and Bergen, Norway"
+Orthopyroxene,BKR1JBB91,JB-JLB-B91,JLB,50 wt% SapCap-1 + 50 wt% Bergen enstatite (63-90 um),63.0,90.0,Particulate Dry-Sieved,"CMS-SCR and Bergen, Norway"
+Orthopyroxene,BKR2JBB91,JB-JLB-B91,JLB,50 wt% SapCap-1 + 50 wt% Bergen enstatite (63-90 um),63.0,90.0,Particulate Dry-Sieved,"CMS-SCR and Bergen, Norway"
+Orthopyroxene,BKR1JBB92,JB-JLB-B92,JLB,75 wt% SapCap-1 + 25 wt% Bergen enstatite (63-90 um),63.0,90.0,Particulate Dry-Sieved,"CMS-SCR and Bergen, Norway"
+Orthopyroxene,BKR2JBB92,JB-JLB-B92,JLB,75 wt% SapCap-1 + 25 wt% Bergen enstatite (63-90 um),63.0,90.0,Particulate Dry-Sieved,"CMS-SCR and Bergen, Norway"
+Orthopyroxene,BKR1JBB93,JB-JLB-B93,JLB,5 wt% SAz-1 + 95 wt% Bergen enstatite (63-90 um),63.0,90.0,Particulate Dry-Sieved,"CMS-SCR and Bergen, Norway"
+Orthopyroxene,BKR1JBB94,JB-JLB-B94,JLB,25 wt% SAz-1 + 75 wt% Bergen enstatite (63-90 um),63.0,90.0,Particulate Dry-Sieved,"CMS-SCR and Bergen, Norway"
+Gypsum,BKR1JBE64A,JB-JLB-E64-A,JLB,Harz gypsum <45 um,0.0,45.0,Particulate Dry-Sieved,"Harz, Thuringia, Germany"
+Gypsum,BKR1JBE64B,JB-JLB-E64-B,JLB,Harz gypsum 45-90 um,45.0,90.0,Particulate Dry-Sieved,"Harz, Thuringia, Germany"
+Gypsum,BKR1JBE64C,JB-JLB-E64-C,JLB,Harz gypsum 90-150 um,90.0,150.0,Particulate Dry-Sieved,"Harz, Thuringia, Germany"
+Gypsum,BKR1JBE64D,JB-JLB-E64-D,JLB,Harz gypsum 150-250 um,150.0,250.0,Particulate Dry-Sieved,"Harz, Thuringia, Germany"
+Gypsum,BKR1JBE64E,JB-JLB-E64-E,JLB,Harz gypsum >250 um,250.0,1000.0,Particulate Dry-Sieved,"Harz, Thuringia, Germany"
+Gypsum,BKR1JBE64F,JB-JLB-E64-F,JLB,Harz gypsum 45-90 um (wet-sieved),45.0,90.0,Particulate Wet-Sieved,"Harz, Thuringia, Germany"
+Gypsum,BKR1JBE64G,JB-JLB-E64-G,JLB,Harz gypsum <45 um (wet-sieved),0.0,45.0,Particulate Wet-Sieved,"Harz, Thuringia, Germany"
+Quartz,BKR1JBE65A,JB-JLB-E65-A,JLB,Quartz <45 um,0.0,45.0,Particulate Wet-Sieved,Unknown
+Quartz,BKR1JBE65B,JB-JLB-E65-B,JLB,Quartz 45-90 um,45.0,90.0,Particulate Wet-Sieved,Unknown
+Quartz,BKR1JBE65C,JB-JLB-E65-C,JLB,Quartz 90-150 um,90.0,150.0,Particulate Wet-Sieved,Unknown
+Quartz,BKR1JBE65D,JB-JLB-E65-D,JLB,Quartz 150-250 um,150.0,250.0,Particulate Wet-Sieved,Unknown
+Quartz,BKR1JBE65E,JB-JLB-E65-E,JLB,Quartz >250 um,250.0,1000.0,Particulate Wet-Sieved,Unknown
+Gypsum,BKR1JBE66,JB-JLB-E66,JLB,10 wt% gypsum + 90 wt% quartz,90.0,150.0,Particulate Sorted,
+Gypsum,BKR1JBE67,JB-JLB-E67,JLB,20 wt% gypsum + 80 wt% quartz,90.0,150.0,Particulate Sorted,
+Gypsum,BKR1JBE68,JB-JLB-E68,JLB,50 wt% gypsum + 50 wt% quartz,90.0,150.0,Particulate Sorted,
+Gypsum,BKR1JBE69,JB-JLB-E69,JLB,90 wt% gypsum + 10 wt% quartz,90.0,150.0,Particulate Sorted,
+Gypsum,BKRAJBE69,JB-JLB-E69,JLB,90 wt% gypsum + 10 wt% quartz,90.0,150.0,Particulate Sorted,
+Gypsum,BKR1JBE70,JB-JLB-E70,JLB,95 wt% gypsum + 5 wt% quartz,90.0,150.0,Particulate Sorted,
+Gypsum,BKRAJBE70,JB-JLB-E70,JLB,95 wt% gypsum + 5 wt% quartz,90.0,150.0,Particulate Sorted,
+Gypsum,BKR1JBE71,JB-JLB-E71,JLB,99 wt% gypsum + 1 wt% quartz,90.0,150.0,Particulate Sorted,
+Gypsum,BKRAJBE71,JB-JLB-E71,JLB,99 wt% gypsum + 1 wt% quartz,90.0,150.0,Particulate Sorted,
+Gypsum,BKR1JBE72,JB-JLB-E72,JLB,10 wt% gypsum + 90 wt% dolomite,90.0,150.0,Particulate Sorted,
+Gypsum,BKR1JBE73,JB-JLB-E73,JLB,20 wt% gypsum + 80 wt% dolomite,90.0,150.0,Particulate Sorted,
+Gypsum,BKR1JBE74,JB-JLB-E74,JLB,50 wt% gypsum + 50 wt% dolomite,90.0,150.0,Particulate Sorted,
+Gypsum,BKR1JBE75,JB-JLB-E75,JLB,80 wt% gypsum + 20 wt% dolomite,90.0,150.0,Particulate Sorted,
+Gypsum,BKR1JBE76,JB-JLB-E76,JLB,90 wt% gypsum + 10 wt% dolomite,90.0,150.0,Particulate Sorted,
+Gypsum,BKR1JBE77,JB-JLB-E77,JLB,95 wt% gypsum + 5 wt% dolomite,90.0,150.0,Particulate Sorted,
+Jarosite,BKR1JBG87,JB-JLB-G87,JLB,50% jarosite + 50% gypsum mixture (JB1687) 90-150 um,90.0,150.0,Particulate Ground Sorted,"Enver Murad; Kohnstedt quarry, Germany"
+Fayalite,BKR1KK039P,KK-KRK-039-P,KRK,San Carlos olivine #19 <75 um pellet,0.0,75.0,Pressed Powder Pellet,"San Carlos, AZ"
+Fayalite,BKR1KK039PH,KK-KRK-039-PH,KRK,San Carlos olivine #19 pellet implanted with 1x10^17/cm2 H at 1 keV,0.0,75.0,Pressed Powder Pellet,"San Carlos, AZ"
+Fayalite,BKR1KK039PU,KK-KRK-039-PU,KRK,San Carlos olivine #19 pellet + UV 3901 hrs,0.0,75.0,Pressed Powder Pellet,"San Carlos, AZ"
+Orthopyroxene,BKR1KK040P,KK-KRK-040-P,KRK,Egersund orthopyroxene 5.2 <75 um pellet,0.0,75.0,Pressed Powder Pellet,"Egersund Anorthosite Massif, Norway"
+Orthopyroxene,BKR1KK040PH,KK-KRK-040-PH,KRK,Egersund opx 5.2 pellet implanted with 1x10^17/cm2 H at 1 keV,0.0,75.0,Pressed Powder Pellet,"Egersund Anorthosite Massif, Norway"
+Orthopyroxene,BKR1KK040PU,KK-KRK-040-PU,KRK,Egersund opx 5.2 pellet + UV 3901 hrs,0.0,75.0,Pressed Powder Pellet,"Egersund Anorthosite Massif, Norway"
+Fayalite,BKR0KW001A,KW-JFM-001-A,JFM,San Carlos olivine <20 um,0.0,20.0,Particulate Ground Sorted,"San Carlos, AZ, USA"
+Fayalite,BKR1KW001A,KW-JFM-001-A,JFM,San Carlos olivine <20 um,0.0,20.0,Particulate Ground Sorted,"San Carlos, AZ, USA"
+Fayalite,BKR0KW001B,KW-JFM-001-B,JFM,San Carlos olivine 20-45 um,20.0,45.0,Particulate Ground Sorted,"San Carlos, AZ, USA"
+Fayalite,BKR1KW001B,KW-JFM-001-B,JFM,San Carlos olivine 20-45 um,20.0,45.0,Particulate Ground Sorted,"San Carlos, AZ, USA"
+Fayalite,BKR0KW001C,KW-JFM-001-C,JFM,San Carlos olivine 45-75 um,45.0,75.0,Particulate Ground Sorted,"San Carlos, AZ, USA"
+Fayalite,BKR1KW001C,KW-JFM-001-C,JFM,San Carlos olivine 45-75 um,45.0,75.0,Particulate Ground Sorted,"San Carlos, AZ, USA"
+Orthopyroxene,BKR0KW002A,KW-JFM-002-A,JFM,Kilosa enstatite <25 um,0.0,25.0,Particulate Ground Sorted,"Kilosa, Morogoro, Tanzania"
+Orthopyroxene,BKR1KW002A,KW-JFM-002-A,JFM,Kilosa enstatite <25 um,0.0,25.0,Particulate Ground Sorted,"Kilosa, Morogoro, Tanzania"
+Orthopyroxene,BKR0KW002B,KW-JFM-002-B,JFM,Kilosa enstatite 25-45 um,25.0,45.0,Particulate Ground Sorted,"Kilosa, Morogoro, Tanzania"
+Orthopyroxene,BKR1KW002B,KW-JFM-002-B,JFM,Kilosa enstatite 25-45 um,25.0,45.0,Particulate Ground Sorted,"Kilosa, Morogoro, Tanzania"
+Orthopyroxene,BKR0KW002C,KW-JFM-002-C,JFM,Kilosa enstatite 45-75 um,45.0,75.0,Particulate Ground Sorted,"Kilosa, Morogoro, Tanzania"
+Orthopyroxene,BKR1KW002C,KW-JFM-002-C,JFM,Kilosa enstatite 45-75 um,45.0,75.0,Particulate Ground Sorted,"Kilosa, Morogoro, Tanzania"
+Anorthite,BKR0KW003A,KW-JFM-003-A,JFM,Miyake-jima Anorthite <25 um,0.0,25.0,Particulate Ground Sorted,"Miyake-jima, Japan"
+Anorthite,BKR1KW003A,KW-JFM-003-A,JFM,Miyake-jima Anorthite <25 um,0.0,25.0,Particulate Ground Sorted,"Miyake-jima, Japan"
+Anorthite,BKR0KW003B,KW-JFM-003-B,JFM,Miyake-jima Anorthite 25-45 um,25.0,45.0,Particulate Ground Sorted,"Miyake-jima, Japan"
+Anorthite,BKR1KW003B,KW-JFM-003-B,JFM,Miyake-jima Anorthite 25-45 um,25.0,45.0,Particulate Ground Sorted,"Miyake-jima, Japan"
+Anorthite,BKR0KW003C,KW-JFM-003-C,JFM,Miyake-jima Anorthite 45-75 um,45.0,75.0,Particulate Ground Sorted,"Miyake-jima, Japan"
+Anorthite,BKR1KW003C,KW-JFM-003-C,JFM,Miyake-jima Anorthite 45-75 um,45.0,75.0,Particulate Ground Sorted,"Miyake-jima, Japan"
+Anorthite,BKR0KY001,KY-S1S-001,S1S,Ohshima Anorthite,0.0,63.0,Particulate Ground Dry-Sieved,"Ohshima, Ohtsuki city, Yamanashi Prefecture, Japan"
+Anorthite,BKR1KY001,KY-S1S-001,S1S,Ohshima Anorthite,0.0,63.0,Particulate Ground Dry-Sieved,"Ohshima, Ohtsuki city, Yamanashi Prefecture, Japan"
+Anorthite,BKR0KY002,KY-S1S-002,S1S,Fugoppe Anorthite,0.0,63.0,Particulate Ground Dry-Sieved,"Fugoppe, Yoichi city, Hokkaido Prefecture, Japan"
+Anorthite,BKR1KY002,KY-S1S-002,S1S,Fugoppe Anorthite,0.0,63.0,Particulate Ground Dry-Sieved,"Fugoppe, Yoichi city, Hokkaido Prefecture, Japan"
+Gypsum,BKR1LF004,LF-NEB-004,NEB,Gypsum,710.0,1000.0,Particulate Sorted,"Pomaia, Italy; Wards P/N: 46E 3783 (43º 25' 23.75""N 10º 33' 19.09""E)"
+Jarosite,BKR1LF007,LF-NEB-007,NEB,Jarosite - RT,0.0,710.0,Particulate Sorted,"Rio Tinto, Spain (37º 37' 39.90""N 06º 32' 10.78""W)"
+Jarosite,BKR1LF008,LF-NEB-008,NEB,Jarosite - CA,0.0,710.0,Particulate Sorted,"Panoche Hills, Ca, USA (36º 37' 08.18""N 120º 39' 15.98""W)"
+Quartz,BKR1LF009,LF-NEB-009,NEB,Quartz - Fisher,149.0,400.0,Bulk Particulate,Fisher P/N: S25-3
+Quartz,BKR1LF010,LF-NEB-010,NEB,Quartz - Acros,149.0,400.0,Bulk Particulate,Acros P/N: S24/25
+Fayalite,BKR2LR169,LR-CMP-169,CMP,"15555,965 olivine B",0.0,125.0,Particulate Ground Sorted,"Apollo 15 site, Moon"
+Fayalite,BKR3LR169,LR-CMP-169,CMP,"15555,965 olivine B",0.0,125.0,Particulate Ground Sorted,"Apollo 15 site, Moon"
+Anorthite,BKR1LR171,LR-CMP-171,CMP,"15555,965 plagioclase B",0.0,125.0,Particulate Ground Sorted,"Apollo 15 site, Moon"
+Anorthite,BKR1LR174,LR-CMP-174,CMP,"15058,276 plagioclase",0.0,125.0,Particulate Ground Sorted,"Apollo 15 site, Moon"
+Anorthite,BKR1LR177,LR-CMP-177,CMP,"70017,535 plagioclase B",0.0,125.0,Particulate Ground Sorted,"Apollo 17 site, Moon"
+Ilmenite,BKR1LR178,LR-CMP-178,CMP,"70017,535 ilmenite",0.0,125.0,Particulate Ground Sorted,"Apollo 17 site, Moon"
+Anorthite,BKR1LR181,LR-CMP-181,CMP,"70035,188 plagioclase B",0.0,125.0,Particulate Ground Sorted,"Apollo 17 site, Moon"
+Ilmenite,BKR1LR182,LR-CMP-182,CMP,"70035,188 ilmenite",0.0,125.0,Particulate Ground Sorted,"Apollo 17 site, Moon"
+Anorthite,BKR1LR183,LR-CMP-183,CMP,"62241,21 plagioclase B",0.0,125.0,Particulate Ground Sorted,"Apollo 16 site, Moon"
+Anorthite,BKR1LR210,LR-CMP-210,CMP,"15058,276 plagioclase D <45 um",0.0,45.0,Particulate Ground Sorted,"Apollo 15 site, Moon"
+Fayalite,BKR1LR212,LR-CMP-212,CMP,"15555,965 olivine D <45 um",0.0,45.0,Particulate Ground Sorted,"Apollo 15 site, Moon"
+Anorthite,BKR1LR214,LR-CMP-214,CMP,"15555,965 plagioclase D <45 um",0.0,45.0,Particulate Ground Sorted,"Apollo 15 site, Moon"
+Anorthite,BKR1LR217,LR-CMP-217,CMP,"70017,535 plagioclase D <45 um",0.0,45.0,Particulate Ground Sorted,"Apollo 17 site, Moon"
+Ilmenite,BKR1LR218,LR-CMP-218,CMP,"70017,535 ilmenite D <45 um",0.0,45.0,Particulate Ground Sorted,"Apollo 17 site, Moon"
+Anorthite,BKR1LR221,LR-CMP-221,CMP,"70035,188 plagioclase D <45 um",0.0,45.0,Particulate Ground Sorted,"Apollo 17 site, Moon"
+Ilmenite,BKR1LR222,LR-CMP-222,CMP,"70035,188 ilmenite D <45 um",0.0,45.0,Particulate Ground Sorted,"Apollo 17 site, Moon"
+Anorthite,BKR1LR223,LR-CMP-223,CMP,"62241,21 plagioclase D <45 um",0.0,45.0,Particulate Ground Sorted,"Apollo 16 site, Moon"
+Anorthite,BKR1LR224,LR-CMP-224,CMP,"15415,60 plagioclase B",0.0,125.0,Particulate Ground Sorted,"Apollo 15 site, Moon"
+Anorthite,BKR1LR229,LR-LEN-229,LEN,60015 plagioclase 75-150 um,75.0,150.0,Particulate Sorted,"Apollo 16 site, Moon"
+Anorthite,BKR1MT062,MT-CMP-062,CMP,Y-980318 plagioclase,0.0,75.0,Particulate Ground Sorted,"Yamato Mtns, Antarctica "
+Anorthite,BKR1MT066,MT-CMP-066,CMP,Y-980433 plagioclase,37.0,63.0,Particulate Ground Sorted,"Yamato Mtns, Antarctica "
+Orthopyroxene,BKR1MX079G,MX-CMP-079-G,CMP,Plag93-BambleOpx07,0.0,1000.0,Particulate,"Labradorite: Mexico; Opx: Bamble, Norway"
+Orthopyroxene,BKR1MX079H,MX-CMP-079-H,CMP,Plag93-BambleOpx07,0.0,1000.0,Particulate,"Labradorite: Mexico; Opx: Bamble, Norway"
+Orthopyroxene,BKR1MX019A,MX-JPE-019-A,JPE,50% San Carlos olivine + 50% Tanzania enstatite mixture <125 um,0.0,125.0,Particulate Ground Sorted,"San Carlos, AZ & Tanzania, Africa"
+Orthopyroxene,BKR1MX019T,MX-JPE-019-T,JPE,50% San Carlos olivine + 50% Tanzania enstatite mixture <125 um treated with ETG,0.0,125.0,Particulate Ground Sorted,"San Carlos, AZ & Tanzania, Africa"
+Fayalite,BKR1OL029N,OL-ECS-029-N,ECS,Globe Olivine 38-63 um,38.0,45.0,Particulate Ground Wet-Sieved,"Globe, Arizona"
+Fayalite,BKR1OL029Q,OL-ECS-029-Q,ECS,Globe Olivine 150-180 um,150.0,180.0,Particulate Ground Wet-Sieved,"Globe, Arizona"
+Fayalite,BKR1OL029U,OL-ECS-029-U,ECS,Globe Olivine 300-500 um,300.0,500.0,Particulate Ground Wet-Sieved,"Globe, Arizona"
+Fayalite,BKR1OL030N,OL-ECS-030-N,ECS,San Carlos Olivine 38-63 um,38.0,63.0,Particulate Ground Wet-Sieved,"San Carlos, NM"
+Fayalite,BKR1OL030Q,OL-ECS-030-Q,ECS,San Carlos Olivine 150-180 um,150.0,180.0,Particulate Ground Wet-Sieved,"San Carlos, NM"
+Fayalite,BKR1OL030U,OL-ECS-030-U,ECS,San Carlos Olivine 300-500 um,300.0,500.0,Particulate Ground Wet-Sieved,"San Carlos, NM"
+Fayalite,BKR1OL020A,OL-JPE-020-A,JPE,San Carlos olivine 1 <125 um,0.0,125.0,Particulate Ground Sorted,"San Carlos, AZ"
+Fayalite,BKR1OL020T,OL-JPE-020-T,JPE,San Carlos olivine 2 <125 um treated with ETG,0.0,125.0,Particulate Ground Sorted,"San Carlos, AZ"
+Fayalite,BKR1OL018A,OL-RLK-018-A,RLK,Olivine unheated <45 um,0.0,45.0,Particulate,"Taos, NM"
+Fayalite,BKR2OL018A,OL-RLK-018-A,RLK,Olivine unheated <45 um,0.0,45.0,Particulate,"Taos, NM"
+Fayalite,BKR1OL018D,OL-RLK-018-D,RLK,Olivine 700C 24 hrs <45 um,0.0,45.0,Particulate,"Taos, NM"
+Fayalite,BKR2OL018D,OL-RLK-018-D,RLK,Olivine 700C 24 hrs <45 um,0.0,45.0,Particulate,"Taos, NM"
+Fayalite,BKR1OL018E,OL-RLK-018-E,RLK,Olivine 800C 24 hrs <45 um,0.0,45.0,Particulate,"Taos, NM"
+Fayalite,BKR2OL018E,OL-RLK-018-E,RLK,Olivine 800C 24 hrs <45 um,0.0,45.0,Particulate,"Taos, NM"
+Fayalite,BKR1OL028,OL-RLK-028,RLK,San Carlos olivine <125 um,0.0,125.0,Particulate Ground Sorted,"San Carlos, AZ"
+Orthopyroxene,BKR1OP013A,OP-RLK-013-A,RLK,Orthopyroxene unheated <45 um,0.0,45.0,Particulate,Unknown 
+Orthopyroxene,BKR2OP013A,OP-RLK-013-A,RLK,Orthopyroxene unheated <45 um,0.0,45.0,Particulate,Unknown 
+Orthopyroxene,BKR1OP013C,OP-RLK-013-C,RLK,Orthopyroxene 600C 3 days,0.0,45.0,Particulate,Unknown 
+Orthopyroxene,BKR2OP013C,OP-RLK-013-C,RLK,Orthopyroxene 600C 3 days,0.0,45.0,Particulate,Unknown 
+Orthopyroxene,BKR1OP013D,OP-RLK-013-D,RLK,Orthopyroxene 700C 24 hrs,0.0,45.0,Particulate,Unknown 
+Orthopyroxene,BKR2OP013D,OP-RLK-013-D,RLK,Orthopyroxene 700C 24 hrs,0.0,45.0,Particulate,Unknown 
+Orthopyroxene,BKR1OP013E,OP-RLK-013-E,RLK,Orthopyroxene 800C 24 hrs,0.0,45.0,Particulate,Unknown 
+Orthopyroxene,BKR2OP013E,OP-RLK-013-E,RLK,Orthopyroxene 800C 24 hrs,0.0,45.0,Particulate,Unknown 
+Orthopyroxene,BKR1OP014A,OP-RLK-014-A,RLK,Enstatite unheated <45 um,0.0,45.0,Particulate,"Grieszerof, Austria"
+Orthopyroxene,BKR2OP014A,OP-RLK-014-A,RLK,Enstatite unheated <45 um,0.0,45.0,Particulate,"Grieszerof, Austria"
+Orthopyroxene,BKR1OP014B,OP-RLK-014-B,RLK,Enstatite 500C 1 week,0.0,45.0,Particulate,"Grieszerof, Austria"
+Orthopyroxene,BKR2OP014B,OP-RLK-014-B,RLK,Enstatite 500C 1 week,0.0,45.0,Particulate,"Grieszerof, Austria"
+Orthopyroxene,BKR1OP014C,OP-RLK-014-C,RLK,Enstatite 600C 3 days,0.0,45.0,Particulate,"Grieszerof, Austria"
+Orthopyroxene,BKR2OP014C,OP-RLK-014-C,RLK,Enstatite 600C 3 days,0.0,45.0,Particulate,"Grieszerof, Austria"
+Orthopyroxene,BKR1OP014D,OP-RLK-014-D,RLK,Enstatite 700C 24 hrs,0.0,45.0,Particulate,"Grieszerof, Austria"
+Orthopyroxene,BKR2OP014D,OP-RLK-014-D,RLK,Enstatite 700C 24 hrs,0.0,45.0,Particulate,"Grieszerof, Austria"
+Orthopyroxene,BKR1OP014E,OP-RLK-014-E,RLK,Enstatite 800C 24 hrs,0.0,45.0,Particulate,"Grieszerof, Austria"
+Orthopyroxene,BKR2OP014E,OP-RLK-014-E,RLK,Enstatite 800C 24 hrs,0.0,45.0,Particulate,"Grieszerof, Austria"
+Anorthite,BKR1PA060G,PA-CMP-060-G,CMP,Split Rock anorthite 45-125 um,45.0,125.0,Particulate,"Split Rock, MN"
+Anorthite,NAPB02,PB-EMF-002-A,EMF,Bytownite,0.0,0.0,Particulate,
+Anorthite,NBPB02,PB-EMF-002-B,EMF,Bytownite,0.0,0.0,Particulate,
+Anorthite,NCPB02,PB-EMF-002-C,EMF,Bytownite,0.0,0.0,Particulate,
+Orthopyroxene,BKR1PE011,PE-CMP-011,CMP,Enstatite,0.0,45.0,Particulate,"Near Bamble, Norway "
+Orthopyroxene,NNPE34H,PE-CMP-034-H,CMP,Opx 25,0.0,25.0,Particulate,"Webster, NC "
+Orthopyroxene,NNPE34I,PE-CMP-034-I,CMP,Opx 75,25.0,75.0,Particulate,"Wesbster, NC"
+Orthopyroxene,NNPE34J,PE-CMP-034-J,CMP,Opx 250,75.0,250.0,Particulate,"Webster, NC "
+Orthopyroxene,NNPE34K,PE-CMP-034-K,CMP,Fine opx soil,0.0,250.0,Particulate,"Webster, NC "
+Orthopyroxene,NNPE34L,PE-CMP-034-L,CMP,Medium opx soil,0.0,250.0,Particulate,"Webster, NC "
+Orthopyroxene,NNPE34M,PE-CMP-034-M,CMP,Coarse opx soil,0.0,250.0,Particulate,"Webster, NC "
+Anorthite,BKR1PL154E,PL-ECS-154-E,ECS,Crystal Bay bytownite 106-150 um,106.0,150.0,Particulate Ground Sorted,"Crystal Bay, Minn "
+Anorthite,BKR1PL154F,PL-ECS-154-F,ECS,Crystal Bay bytownite 150-180 um,150.0,180.0,Particulate Ground Sorted,"Crystal Bay, Minn "
+Anorthite,BKR1PL154G,PL-ECS-154-G,ECS,Crystal Bay bytownite 180-300 um,180.0,300.0,Particulate Ground Sorted,"Crystal Bay, Minn "
+Anorthite,BKR1PL154H,PL-ECS-154-H,ECS,Crystal Bay bytownite 300-500 um,300.0,500.0,Particulate Ground Sorted,"Crystal Bay, Minn "
+Anorthite,BKR1PL154I,PL-ECS-154-I,ECS,Crystal Bay bytownite 500-710 um,500.0,710.0,Particulate Ground Sorted,"Crystal Bay, Minn "
+Anorthite,BKR1PL154J,PL-ECS-154-J,ECS,Crystal Bay bytownite 710-1000 um,710.0,1000.0,Particulate Ground Sorted,"Crystal Bay, Minn "
+Anorthite,BKR1PL154K,PL-ECS-154-K,ECS,Crystal Bay bytownite <38 um,0.0,38.0,Particulate Ground Sorted,"Crystal Bay, Minn "
+Anorthite,BKR1PL154L,PL-ECS-154-L,ECS,Crystal Bay bytownite 38-63 um,38.0,63.0,Particulate Ground Sorted,"Crystal Bay, Minn "
+Anorthite,BKR1PL154M,PL-ECS-154-M,ECS,Crystal Bay bytownite 63-106 um,63.0,106.0,Particulate Ground Sorted,"Crystal Bay, Minn "
+Anorthite,BKR1PL154N,PL-ECS-154-N,ECS,Crystal Bay bytownite 38-63 um wet-sieved,38.0,63.0,Particulate Ground Wet-Sieved,"Crystal Bay, Minn "
+Anorthite,BKR2PL154N,PL-ECS-154-N,ECS,Crystal Bay bytownite 38-63 um wet-sieved,38.0,63.0,Particulate Ground Wet-Sieved,"Crystal Bay, Minn "
+Anorthite,BKR1PL154O,PL-ECS-154-O,ECS,Crystal Bay bytownite 63-106 um wet-sieved,63.0,106.0,Particulate Ground Wet-Sieved,"Crystal Bay, Minn "
+Anorthite,BKR1PL154P,PL-ECS-154-P,ECS,Crystal Bay bytownite 106-150 um wet-sieved,106.0,150.0,Particulate Ground Wet-Sieved,"Crystal Bay, Minn "
+Anorthite,BKR1PL154Q,PL-ECS-154-Q,ECS,Crystal Bay bytownite 150-180 um wet-sieved,150.0,180.0,Particulate Ground Wet-Sieved,"Crystal Bay, Minn "
+Anorthite,BKR2PL154Q,PL-ECS-154-Q,ECS,Crystal Bay bytownite 150-180 um wet-sieved,150.0,180.0,Particulate Ground Wet-Sieved,"Crystal Bay, Minn "
+Anorthite,BKR1PL154R,PL-ECS-154-R,ECS,Crystal Bay bytownite <25 um wet-sieved,0.0,25.0,Particulate Ground Wet-Sieved,"Crystal Bay, Minn "
+Anorthite,BKR1PL154S,PL-ECS-154-S,ECS,Crystal Bay bytownite 25-38 um wet-sieved,25.0,38.0,Particulate Ground Wet-Sieved,"Crystal Bay, Minn "
+Anorthite,BKR1PL154T,PL-ECS-154-T,ECS,Crystal Bay bytownite 180-300 um wet-sieved,180.0,300.0,Particulate Ground Wet-Sieved,"Crystal Bay, Minn "
+Anorthite,BKR1PL154U,PL-ECS-154-U,ECS,Crystal Bay bytownite 300-500 um wet-sieved,300.0,500.0,Particulate Ground Wet-Sieved,"Crystal Bay, Minn "
+Anorthite,BKR2PL154U,PL-ECS-154-U,ECS,Crystal Bay bytownite 300-500 um wet-sieved,300.0,500.0,Particulate Ground Wet-Sieved,"Crystal Bay, Minn "
+Anorthite,BKR2PL155N,PL-ECS-155-N,ECS,Chihuahua labradorite 38-63 um wet-sieved,38.0,63.0,Particulate Ground Wet-Sieved,"Chihuahua, Mexico"
+Anorthite,BKR2PL155Q,PL-ECS-155-Q,ECS,Chihuahua labradorite 150-180 um wet-sieved,150.0,180.0,Particulate Ground Wet-Sieved,"Chihuahua, Mexico"
+Anorthite,BKR2PL155U,PL-ECS-155-U,ECS,Chihuahua labradorite 300-500 um wet-sieved,300.0,500.0,Particulate Ground Wet-Sieved,"Chihuahua, Mexico"
+Anorthite,BKR1PL114B,PL-H1T-114-B,H1T,Bytownite 125-500 um,125.0,500.0,Particulate Ground Sorted,"Casa Grandu Area, Chihuahua, Mexico"
+Anorthite,BKR1PL114C,PL-H1T-114-C,H1T,Bytownite <125 um,0.0,125.0,Particulate Ground Sorted,"Casa Grandu Area, Chihuahua, Mexico"
+Anorthite,BKR1PL114D,PL-H1T-114-D,H1T,Bytownite 75-125 um,75.0,125.0,Particulate Ground Sorted,"Casa Grandu Area, Chihuahua, Mexico"
+Anorthite,BKR1PL114E,PL-H1T-114-E,H1T,Bytownite <75 um,0.0,75.0,Particulate Ground Sorted,"Casa Grandu Area, Chihuahua, Mexico"
+Anorthite,BKR1PL115B,PL-H1T-115-B,H1T,Crystal Bay bytownite 125-500 um,125.0,500.0,Particulate Ground Sorted,"Crystal Bay, Minn "
+Anorthite,BKR1PL115C,PL-H1T-115-C,H1T,Crystal Bay bytownite <125 um,0.0,125.0,Particulate Ground Sorted,"Crystal Bay, Minn "
+Anorthite,BKR1PL090,PL-J1H-090,J1H,Labradorite X01261-3 <25 um,0.0,25.0,Particulate Ground Sorted,"Ihosy, Madagaskar"
+Anorthite,BKR1PL091,PL-J1H-091,J1H,Labradorite X01261-3 <25 um heated in air at 160 C overnight,0.0,25.0,Particulate Ground Sorted,"Ihosy, Madagaskar"
+Anorthite,BKR1PL092,PL-J1H-092,J1H,Labradorite X01261-3 <25 um heated in vacuum at 500 C for 4 hours,0.0,25.0,Particulate Ground Sorted,"Ihosy, Madagaskar"
+Anorthite,BKR1PL093,PL-J1H-093,J1H,Labradorite X01261-3 25-63 um heated in air at 160 C overnight,25.0,63.0,Particulate Ground Sorted,"Ihosy, Madagaskar"
+Anorthite,BKR1PL094,PL-J1H-094,J1H,Labradorite X01261-3 25-63 um heated in vacuum at 500 C for 4 hours,25.0,63.0,Particulate Ground Sorted,"Ihosy, Madagaskar"
+Magnetite,LAPM12A,PM-CMP-012-A,CMP,Magnetite <45 um,0.0,45.0,Particulate,"Ishpeming, Mich "
+Fayalite,NNPO32B,PO-CMP-032-B,CMP,GSB olivine 25-75 um,25.0,75.0,Particulate,Hawaii
+Fayalite,NNPO32C,PO-CMP-032-C,CMP,GSB olivine 75-250 um,75.0,250.0,Particulate,Hawaii
+Fayalite,NNPO32E,PO-CMP-032-E,CMP,GSB olivine <25 um (purer),0.0,25.0,Particulate,Hawaii
+Fayalite,NNPO32H,PO-CMP-032-H,CMP,GSB olivine fine soil,0.0,0.0,Particulate,Hawaii
+Fayalite,NNPO32I,PO-CMP-032-I,CMP,GSB olivine medium soil,0.0,0.0,Particulate,Hawaii
+Fayalite,NNPO32J,PO-CMP-032-J,CMP,GSB olivine coarse soil,0.0,0.0,Particulate,Hawaii
+Fayalite,BKR1PO080A,PO-CMP-080-A,CMP,Olivine <63 um,0.0,63.0,Particulate,
+Fayalite,BKR1PO080B,PO-CMP-080-B,CMP,Olivine 63-125 um,63.0,125.0,Particulate,
+Fayalite,BKR1PO080C,PO-CMP-080-C,CMP,Olivine 125-250 um,125.0,250.0,Particulate,
+Fayalite,NCPO81J,PO-CMP-081-J,CMP,Green Olivine polished slab center spot,0.0,0.0,Slab Polished ,
+Fayalite,NCPO81K,PO-CMP-081-K,CMP,Green Olivine polished slab left spot,0.0,0.0,Slab Polished ,
+Fayalite,NCPO81L,PO-CMP-081-L,CMP,Green Olivine polished slab right spot,0.0,0.0,Slab Polished ,
+Fayalite,NCPO81RJ,PO-CMP-081-RJ,CMP,Green Olivine irradiated slab center spot,0.0,0.0,Slab Polished ,
+Fayalite,NCPO81RK,PO-CMP-081-RK,CMP,Green Olivine irradiated slab left spot,0.0,0.0,Slab Polished ,
+Fayalite,NCPO81RL,PO-CMP-081-RL,CMP,Green Olivine irradiated slab right spot,0.0,0.0,Slab Polished ,
+Fayalite,LDPO84,PO-JFM-084-D,JFM,Olivine 250-500 um,250.0,500.0,Particulate,"Jackson Cty, NC "
+Fayalite,NDPO84,PO-JFM-084-D,JFM,Olivine 250-500 um,250.0,500.0,Particulate,"Jackson Cty, NC "
+Fayalite,LEPO84,PO-JFM-084-E,JFM,Olivine 45-75 um,45.0,75.0,Particulate,"Jackson Cty, NC "
+Fayalite,NEPO84,PO-JFM-084-E,JFM,Olivine 45-75 um,45.0,75.0,Particulate,"Jackson Cty, NC "
+Fayalite,LFPO84,PO-JFM-084-F,JFM,Olivine 25-45 um,25.0,45.0,Particulate,"Jackson Cty, NC "
+Fayalite,NFPO84,PO-JFM-084-F,JFM,Olivine 25-45 um,25.0,45.0,Particulate,"Jackson Cty, NC "
+Fayalite,LGPO84,PO-JFM-084-G,JFM,Olivine <25 um,0.0,25.0,Particulate,"Jackson Cty, NC "
+Fayalite,NGPO84,PO-JFM-084-G,JFM,Olivine <25 um,0.0,25.0,Particulate,"Jackson Cty, NC "
+Fayalite,LIPO84,PO-JFM-084-I,JFM,Olivine contaminants <250 um,0.0,250.0,Particulate,"Jackson Cty, NC "
+Fayalite,NIPO84,PO-JFM-084-I,JFM,Olivine contaminants <250 um,0.0,250.0,Particulate,"Jackson Cty, NC "
+Fayalite,LJPO84,PO-JFM-084-J,JFM,Olivine bulk <250 um,0.0,250.0,Particulate,"Jackson Cty, NC "
+Fayalite,NJPO84,PO-JFM-084-J,JFM,Olivine bulk <250 um,0.0,250.0,Particulate,"Jackson Cty, NC "
+Fayalite,LAPO06,PO-TXH-006,TXH,Olivine (Untreated),0.0,75.0,Particulate,San Carlos
+Fayalite,LAPO07,PO-TXH-007,TXH,Olivine (Laser 15mJ),0.0,75.0,Particulate,San Carlos
+Fayalite,LAPO08,PO-TXH-008,TXH,Olivine (Laser 30mJ),0.0,75.0,Particulate,San Carlos
+Pigeonite,NBPP21,PP-CMP-021,CMP,CPX 45,0.0,45.0,Particulate,"Mauna Kea, Hawaii "
+Pigeonite,NBPP22,PP-CMP-022,CMP,Cpx 75,45.0,75.0,Particulate,Hawaii
+Pigeonite,NBPP23,PP-CMP-023,CMP,Cpx 125,75.0,125.0,Particulate,Hawaii
+Pigeonite,NNPP27A,PP-CMP-027-A,CMP,Cpx <25 um,0.0,25.0,Particulate,Hawaii
+Pigeonite,NNPP27B,PP-CMP-027-B,CMP,Cpx 25-75 um,25.0,75.0,Particulate,Hawaii
+Pigeonite,NNPP27C,PP-CMP-027-C,CMP,Cpx 75-250 um,75.0,250.0,Particulate,Hawaii
+Pigeonite,NNPP27E,PP-CMP-027-E,CMP,Cpx fine soil,0.0,0.0,Particulate,Hawaii
+Pigeonite,NNPP27F,PP-CMP-027-F,CMP,Cpx medium soil,0.0,0.0,Particulate,Hawaii
+Pigeonite,NNPP27G,PP-CMP-027-G,CMP,Cpx coarse soil,0.0,0.0,Particulate,Hawaii
+Quartz,LAPQ03,PQ-JEH-003-A,JEH,Quartz powder <25 um,0.0,25.0,Particulate,
+Quartz,LBPQ03,PQ-JEH-003-B,JEH,Quartz powder 25-45 um,25.0,45.0,Particulate,
+Quartz,L1PQ03C,PQ-JEH-003-C,JEH,Quartz powder 45-63 um,45.0,63.0,Particulate,
+Quartz,L2PQ03C,PQ-JEH-003-C,JEH,Quartz powder 45-63 um,45.0,63.0,Particulate,
+Quartz,L3PQ03C,PQ-JEH-003-C,JEH,Quartz powder 45-63 um,45.0,63.0,Particulate,
+Quartz,LCPQ03,PQ-JEH-003-C,JEH,Quartz powder 45-63 um,45.0,63.0,Particulate,
+Quartz,LDPQ03,PQ-JEH-003-D,JEH,Quartz powder 63-75 um,63.0,75.0,Particulate,
+Quartz,LEPQ03,PQ-JEH-003-E,JEH,Quartz powder 75-150 um,75.0,150.0,Particulate,
+Quartz,LFPQ03,PQ-JEH-003-F,JEH,Quartz powder 150-250 um,150.0,250.0,Particulate,
+Quartz,LGPQ03,PQ-JEH-003-G,JEH,Quartz powder 250-500 um,250.0,500.0,Particulate,
+Quartz,LHPQ03,PQ-JEH-003-H,JEH,Quartz powder 20-25 um,20.0,25.0,Particulate,
+Quartz,LIPQ03,PQ-JEH-003-I,JEH,Quartz powder 15-20 um,15.0,20.0,Particulate,
+Quartz,LJPQ03,PQ-JEH-003-J,JEH,Quartz powder 10-15 um,10.0,15.0,Particulate,
+Quartz,LKPQ03,PQ-JEH-003-K,JEH,Quartz powder <10 um,0.0,10.0,Particulate,
+Quartz,LLPQ03,PQ-JEH-003-L,JEH,Quartz powder 5-10 um,5.0,10.0,Particulate,
+Quartz,LMPQ03,PQ-JEH-003-M,JEH,Quartz powder <5 um,0.0,5.0,Particulate,
+Orthopyroxene,BKR1PX011,PX-DWS-011,DWS,Clinoferrosilite (NMNH 145787),50.0,100.0,Particulate Ground,"Ravensworth (nr.), New South Wales, Australia"
+Orthopyroxene,BKR1PX011AB,PX-DWS-011-AB,DWS,"Clinoferrosilite (NMNH 145787) dried at 105C 24 hrs, washed with HCl & dried at 120C",50.0,100.0,Particulate Ground,"Ravensworth (nr.), New South Wales, Australia"
+Orthopyroxene,BKR1PX011B,PX-DWS-011-B,DWS,Clinoferrosilite (NMNH 145787) washed with HCl and dried at 120C,50.0,100.0,Particulate Ground,"Ravensworth (nr.), New South Wales, Australia"
+Pigeonite,BKR1PX012,PX-DWS-012,DWS,Pigeonite (NMNH) 105869 (maybe impure),50.0,100.0,Particulate Ground,"Hakone Volcano, Honshu, Japan"
+Pigeonite,BKR1PX012B,PX-DWS-012-B,DWS,Pigeonite (NMNH 105869) (maybe impure) washed with HCl and dried at 120C,50.0,100.0,Particulate Ground,"Hakone Volcano, Honshu, Japan"
+Orthopyroxene,BKR1PX016,PX-DWS-016,DWS,Clinoenstatite (NMNH 163346),50.0,100.0,Particulate Ground,"Napoui, New Caledonia"
+Orthopyroxene,BKR1PX016AB,PX-DWS-016-AB,DWS,"Clinoenstatite (NMNH 163346) dried at 105C 24 hrs, washed with HCl & dried at 120C",50.0,100.0,Particulate Ground,"Napoui, New Caledonia"
+Orthopyroxene,BKR1PX016B,PX-DWS-016-B,DWS,Clinoenstatite (NMNH 163346) washed with HCl and dried at 120C,50.0,100.0,Particulate Ground,"Napoui, New Caledonia"
+Orthopyroxene,BKR1PX020A,PX-JPE-020-A,JPE,Tanzania enstatite <125 um,0.0,125.0,Particulate Ground Sorted,"Tanzania, Africa"
+Orthopyroxene,BKR1PX020T,PX-JPE-020-T,JPE,Tanzania enstatite <125 um treated with ETG,0.0,125.0,Particulate Ground Sorted,"Tanzania, Africa"
+Pyrrhotite,LAPY01,PY-LXM-001,LXM,Pyrrhotite 32-63 um,32.0,63.0,Particulate,Russia
+Hematite,NCRH02,RH-CMP-002,CMP,Hematite Unckd,0.0,500.0,Particulate,
+Quartz,N1SI08,SI-DWM-008-A,DWM,Silica standard op21,150.0,1000.0,Particulate,Equatorial Pacific
+Quartz,N2SI08,SI-DWM-008-B,DWM,Silica standard op21,63.0,150.0,Particulate,Equatorial Pacific
+Pigeonite,L1SR01C,SR-VXF-001-C,VXF,BG-14891 CPX,0.0,0.0,Particulate,"Puchezh-Katunky astrobleme, Russia"
+Pigeonite,L1SR02C,SR-VXF-002-C,VXF,BG-10861 CPX,0.0,0.0,Particulate,"Puchezh-Katunky astrobleme, Russia. "
+Pigeonite,L1SR04C,SR-VXF-004-C,VXF,BCn-1818 CPX,0.0,0.0,Particulate,"Puchezh-Katunky astrobleme, Russia. "
+Troilite,LATB49,TB-TJM-049,TJM,Mundrabilla Troilite,0.0,125.0,Particulate Ground,"Mundrabilla, Australia"
+Troilite,MATB49,TB-TJM-049,TJM,Mundrabilla Troilite,0.0,125.0,Particulate Ground,"Mundrabilla, Australia"
+Troilite,LATB50,TB-TJM-050,TJM,Paragould Troilite,0.0,125.0,Particulate Ground,"Greene Co., Arkansas "
+Troilite,MATB50,TB-TJM-050,TJM,Paragould Troilite,0.0,125.0,Particulate Ground,"Greene Co., Arkansas "
+Gypsum,BKR1WF011,WF-WHF-011,WHF,Summerville Fm. gypsum,0.0,400.0,Particulate,"Capitol Reef National Park, Utah"
+Fayalite,BKR1YS009,YS-YGS-009,YGS,Olivine L,0.0,0.0,Particulate,Norwegian dunite rock
+Fayalite,BKR1YS010,YS-YGS-010,YGS,Olivine M,0.0,0.0,Particulate,Norwegian dunite rock
+Fayalite,BKR1YS011,YS-YGS-011,YGS,Olivine S,0.0,0.0,Particulate,Norwegian dunite rock
+Quartz,BKR1YS012,YS-YGS-012,YGS,Spherical silica 1.5,1.5,1.5,Particulate,Synthetic 
+Quartz,BKR1YS013,YS-YGS-013,YGS,Spherical silica 1.0,1.0,1.0,Particulate,Synthetic 
+Quartz,BKR1YS014,YS-YGS-014,YGS,Spherical silica 0.5,0.5,0.5,Particulate,Synthetic 
+Fayalite,BKR1YY001,YY-S2K-001,S2K,Olivine <250 um,0.0,250.0,Particulate Ground Sorted,China
+Quartz,BKR1YY003,YY-S2K-003,S2K,Actinolite with pyroxene and quartz <250 um,0.0,250.0,Particulate Ground Sorted,"Fukui Prefecture, Japan"
+Quartz,BKR1YY005,YY-S2K-005,S2K,Quartz <250 um,0.0,250.0,Particulate Ground Sorted,"Yamanashi Prefecture, Japan"
+Anorthite,BKR1YY006,YY-S2K-006,S2K,Plagioclase <250 um,0.0,250.0,Particulate Ground Sorted,"Izu Oshima, Japan "
+Gypsum,BKR1ZL005,ZL-ZAL-005,ZAL,Gypsum <212 um,0.0,212.0,Particulate Ground Sorted,
+Hematite,BKR1ZL006,ZL-ZAL-006,ZAL,Hematite <212 um,0.0,212.0,Particulate Ground Sorted,
+Ilmenite,BKR1ZL007,ZL-ZAL-007,ZAL,Ilmenite <212 um,0.0,212.0,Particulate Ground Sorted,
+Fayalite,BKR1ZL009,ZL-ZAL-009,ZAL,Olivine <212 um,0.0,212.0,Particulate Ground Sorted,
+Magnetite,BKR1ZL013,ZL-ZAL-013,ZAL,Magnetite <212 um,0.0,212.0,Particulate Ground Sorted,
+Pyrite,BKR1ZL014,ZL-ZAL-014,ZAL,Pyrite <212 um,0.0,212.0,Particulate Ground Sorted,
+Quartz,BKR1ZL024,ZL-ZAL-024,ZAL,Hydrated silica <212 um,0.0,212.0,Particulate Ground Sorted,

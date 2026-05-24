@@ -1,0 +1,426 @@
+\documentclass[12pt]{article}
+\usepackage{hyperref}
+%\usepackage[polish]{babel}% <- Dla wersji polskiej
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{upquote}
+\usepackage[margin=2.5cm, bottom=5cm]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{pdfpages}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{comment}
+
+%\pagestyle{fancy}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{changepage}
+\usepackage[framemethod=tikz]{mdframed}
+
+% Define colors
+\definecolor{codeblue}{RGB}{255, 255, 255}      % Light blue background
+\definecolor{keywordcolor}{RGB}{0, 0, 255}      % Blue for keywords
+\definecolor{commentcolor}{RGB}{0, 128, 0}      % Green for comments
+\definecolor{stringcolor}{RGB}{163, 21, 21}     % Red for strings
+\definecolor{numbercolor}{RGB}{0, 0, 0}     % Purple for numbers
+\definecolor{numbercolor}{RGB}{0, 0, 0}     % Purple for numbers
+
+% Configure listing style
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{codeblue},
+    commentstyle=\color{commentcolor},
+    keywordstyle=\color{keywordcolor}\bfseries,
+    numberstyle=\color{numbercolor},
+    stringstyle=\color{stringcolor},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=false,
+    captionpos=t,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    frame=single,
+    rulecolor=\color{codeblue},
+    xleftmargin=1.5cm,        % Left margin (2 tabs worth)
+    xrightmargin=1cm,       % Right margin for centering
+}
+
+% Set the style as default
+\lstset{style=mystyle}
+
+% Custom environment for centered code blocks
+\newenvironment{centeredcode}
+{
+    \begin{adjustwidth}{2cm}{2cm}  % Additional centering
+    \begin{lstlisting}[language=C]
+}
+{
+    \end{lstlisting}
+    \end{adjustwidth}
+}
+
+%\title{Discussions on E2E architecture and modeling simplification}
+%\date{today}
+
+\begin{document}
+
+%\maketitle
+
+\setlength{\headsep}{3cm}
+
+\begin{center}
+    {\LARGE \textbf{Discussions on E2E architecture and modeling simplification}}\\
+%    {\LARGE \textbf{Current State of ESA E2E Mission Preformance Simulators Module Architecture: Problems, Requirements and Solutions}}\\
+    {\textbf{\today}}
+\end{center}
+\begin{center}
+    {\textbf{Manfred Gawlas}}
+\end{center}
+
+
+
+\vspace{1cm}
+
+\subsection*{Document Approval}
+\begin{tabular*}{\textwidth}{|p{3cm}|@{\extracolsep{\fill}}p{4cm}|p{3cm}|p{2cm}|}
+\hline
+\textbf{Role} & \textbf{Name} & \textbf{Signature} & \textbf{Date} \\
+\hline
+Author & Manfred Gawlas &  & \today \\
+\hline
+Reviewer & & & \\
+\hline
+Approver & & & \\
+\hline
+\end{tabular*}
+
+\vspace{0.5cm}
+
+\subsection*{Change Record}
+\begin{tabular*}{\textwidth}{|p{1.5cm}|p{2.5cm}|p{3cm}|@{\extracolsep{\fill}}p{5.5cm}|p{1.5cm}|}
+\hline
+\textbf{Version} & \textbf{Date} & \textbf{Author} & \textbf{Description} & \textbf{Sections} \\
+\hline
+Draft & 22.12.2025 & Manfred Gawlas & Structure and initial text. & All \\
+\hline
+\end{tabular*}
+
+
+\begin{abstract}
+End-to-end (E2E) simulators play a central role in the development, verification, and validation of Earth observation mission preformance within ESA.
+Despite their importance, architectural aspects of E2E simulation software design though-process are sparsely documented and not discussed within literatue, which in turn can lead to suboptimal design choices.
+Implementation details are often not abstracted and mission-specific, making reuse, testing, and scaling costly. This paper provides a concise architectural review of current E2E simulation practices
+used in ESA-like Earth observation context, focusing on software structure, development phases, and operational limitations.
+Key functional and non-functional requirements are identified, together with common pain points that affect cost, reproducibility, and testability.
+A comparison is drawn with alternative E2E simulation practices employed in large-scale scientific software systems, such as the ATLAS Athena framework.
+Based on these observations, the paper outlines a lightweight, Python-centric architectural direction and provides pragmatic recommendations aimed
+at simplifying E2E simulator development and reducing long-term maintenance and verification effort. In the paper, one of alternative approaches is examined as it was implemented for CHIME E2E Instrument Optical Module.
+\end{abstract}
+
+\section{Introduction}
+
+End-to-end (E2E) mission performance simulators (E2ES) are indispensable tools in the development of modern Earth observation (EO) missions at the European Space Agency (ESA) \cite{ESA_E2E_WhitePaper_2025, Sgheri_FORUM_E2ES_2021, SanjuanFerrer_ROSEL_E2E_2024, biblos_gmv_2020}. These simulators are critical for assessing mission performance and verifying ground processing chains \cite{ESA_E2E_WhitePaper_2025, Sgheri_FORUM_E2ES_2021, SanjuanFerrer_ROSEL_E2E_2024}. To ensure interoperability, ESA has successfully standardized the high-level architecture of these systems, particularly regarding module interfaces and the overarching framework provided by openSF \cite{ESA_Generic_E2E_ICD_2023, openSF_ICD_2018, biblos_gmv_2020, EO_E2E2_RefArch_2018}. \\
+
+\noindent
+However, while external interfaces are well-defined, there is a significant lack of consolidated guidance regarding the internal implementation of these modules. Aspects such as coding style, library selection, and internal software architecture are often left to the discretion of individual contractors, with few recommendations including OpenMP and OpenCL \cite{biblos_gmv_2020, ESA_Generic_E2E_Req_2022}. This lack of standardization frequently results in non-cohesive codebases that rely on suboptimal calculation strategies or redundant internal functions rather than modern scientific libraries. Consequently, many existing simulators suffer from a lack of abstraction, making them difficult to scale, test, or adapt to new mission requirements. \\
+
+\noindent
+These implementation shortcomings have practical consequences beyond software maintenance. The high complexity and lack of transparency in the code create a hard work enviorment for Instrument Performance engineers(I'm taking this from Whitepaper, is this corrent possition name?). These specialists, who often have backgrounds in physics rather than software engineering, are responsible for validating the underlying scientific algorithms \cite{ESA_E2E_WhitePaper_2025}. When implementation details are obscured by overly complex software implementation, the gap between the physical model and its digital twin widens, increasing the risk of errors and driving up development costs.\\
+
+\noindent
+The goal of this paper is to review current implemenataion and technological practices in the ESA EO context, identify core requirements and limitations, and propose simplifications aimed at reducing development and testing effort. Building upon existing ESA guidelines and the BIBLOS framework \cite{ESA_Generic_E2E_Req_2022, biblos_gmv_2020, biblos3_esr_2023}, this work incorporates insights from recent ESA white papers and internal discussions. We compare current practices with alternative large-scale scientific frameworks, such as ATLAS Athena at CERN, to identify transferable lessons. Finally, we propose a Python-centric architectural direction designed to produce cleaner, more readable code that serves as its own documentation and support multi-hardware options, ultimately facilitating easier validation for ESA staff and more efficient delivery for industrial contractors.
+
+\begin{comment}
+\newpage
+\section{Introduction}
+This section introduces the role of end-to-end (E2E) simulators in ESA Earth observation mission workflows and motivates the need for
+architecture-focused discussion. It outlines the lack of consolidated guidance on E2E simulation software design and states the goals of the paper:
+to review current architectural practices, identify requirements and limitations, compare them to alternative approaches, and propose
+simplifications aimed at reducing development and testing cost.
+
+
+End-to-end (E2E) simulators are crucial part of modern scientific Earth observation missions at ESA and worklflows for performance assesment as well as ground processing chain testing \cite{ESA_E2E_WhitePaper_2025, Sgheri_FORUM_E2ES_2021, SanjuanFerrer_ROSEL_E2E_2024}. For their end, significant part of their architecture is codified and standardized by ESA, especially at level of interfaces between modules and architecture at openSF level \cite{ESA_Generic_E2E_ICD_2023, openSF_ICD_2018}. \\
+
+\noindent
+However, a major factor, that is coding style, library usage and and module architecutre lacks consolidated guidance from ESA and is only briefly mentioned. This in turn means that code can be written in non cohesive manner between implementations and may offer suboptimal implementations strategies, no scientific library usage for calculations or usage of suboptimal internal tools. This transfers into lack of flexibity, often overcomplicated code pieces and huge lack of abstraction in code. Those problems limit the achivable level of complexity in project budget and can lead to lack of important features, which could be implemented at library level, or consolidated automated test workflows, without arguing with overarching openSF architecture. More importantly, the code offers hard entry when trying to understand it's algorithm implementation details, which is required for proper validation from Instrument Performance engineers, who have often background in physics not in SW \cite{ESA_E2E_WhitePaper_2025}, futher deepening that discrapancy. \\
+
+\noindent
+The goal of this paper is to review current architectural practices, identify requirements and limitations, compare them to alternative approaches, and propose simplifications aimed at reducing development and testing cost. Those shall be read as an extention and discussion with existing ESA E2E guideliness and BIBLOS \cite{ESA_Generic_E2E_Req_2022, biblos_gmv_2020, biblos3_esr_2023}. It bases some of the opinions on the latest ESA white paper on E2E chains as well as some informal discussions \cite{ESA_E2E_WhitePaper_2025}. The goal is to propose a solution which will help with providing simpler, cleaner code, which would be easier to implement and validate, driving the cost of development lower, but also helping ESA stuff responsible for it's validation.
+\end{comment}
+
+
+\begin{comment}
+\section{Background and Scope}
+%\begin{comment}
+This section defines the scope of the paper and clarifies terminology. It specifies what is meant by E2E simulation in the Earth observation context,
+describes the assumed system boundaries, and outlines what aspects are in scope (software architecture, workflows, testing practices) and out of scope
+(algorithm derivations, mission-specific performance analysis). Assumptions regarding the target audience and abstraction level are stated.
+%\end{comment}
+
+The scope of the paper is to first, discuss current E2E architecture at module level, how it is implemented, the functional and software requirements set by ESA and their potential extension as suggested by informal discussions and ESA Whitepaper \cite{ESA_Generic_E2E_Req_2022}. Next, we overview how similar E2E system is done at CERN for ATLAS, which has vastly more complicated software and in other scenarios. Finaly we propose an alternative approach at module implementation level and discuss first try at the implemenation of Instrument Optical Module, which did not adhere to everything we propose but allowed to cristalize requirements for future such software implementations in python.
+
+%\begin{comment}
+Definition from \cite{ESA_E2E_WhitePaper_2025}. As the explanation what is E2E and it's boundaries.
+
+End-to-End mission performance simulators (here after referred as E2ES) are chains of software tools
+developed to simulate the generation of the geophysical observables target scene, the whole
+observation process from space including orbit, pointing and guidance, the instruments, the on-board
+data generation and the processing of the outputs of these instruments to retrieve the estimate of the
+original observables.
+%\end{comment}
+
+The scope is brief disussion on openSF framework, architecture at module level and technology and hardware used for that as well as test and validation workflow and it's simplification and automation. Out of sscope is mission algorithm derivations, mission-specific stuff and like you said.
+
+The target audience of this include software implementation contractors who develop software, Scientific Algorithms’ developers, Instrument Performance engineers, Simulator and Processor Engineers and Ground Segment System engineers. We want to provide tools for industry and expected standard for ESA Staff. We want new quality of less useless documentation and more readable code which documents itself.
+\end{comment}
+
+\section{Background and Scope}
+
+To establish a common baseline, it is necessary to define the functional boundaries of the systems under discussion. According to the ESA E2E White Paper \cite{ESA_E2E_WhitePaper_2025}, an End-to-End Mission Performance Simulator (E2ES) is defined as:
+
+\begin{quote}
+    \textit{"...chains of software tools developed to simulate the generation of the geophysical observables target scene, the whole observation process from space including orbit, pointing and guidance, the instruments, the on-board data generation and the processing of the outputs of these instruments to retrieve the estimate of the original observables."}
+\end{quote}
+
+In this context, the E2ES serves as a "digital twin" of the entire measurement chain. While the high-level orchestration of these chains is often handled by frameworks like openSF, this paper focuses specifically on the \textbf{module-level architecture}—the internal design and implementation of the individual building blocks (e.g., Instrument Simulation Modules) that constitute the chain.
+
+\subsection{Scope of the Discussion}
+The scope of this work is centered on the software engineering and operational aspects of E2ES development rather than the underlying physics. Specifically, we address:
+\begin{itemize}
+    \item Software Architecture and Technology: Reviewing the current use of object oriented module achitecture, languages and libraries, with a focus on moving toward a python-centric stack that utilizes modern scientific computing tools developed in performent languages.
+    \item Hardware Utilization: Discussing the trade-offs between CPU-based processing and GPU-accelerated workflows to meet increasing performance demands.
+    \item Validation and Testing Workflows: Proposing methods for automated error reporting and result analysis to replace labor-intensive manual verification and properly analysing numerical errors.
+    \item Documentation Practices: Exploring the transition from static, text-heavy implementation documentation toward self-documenting code.
+\end{itemize}
+
+\noindent
+Conversely, this paper does not cover mission-specific algorithm derivations or detailed physical modeling for particular Earth observation sensors. \\
+
+\noindent
+Finally, the paper references a practical implementation case: the Instrument Optical Module for the CHIME (Copernicus Hyperspectral Imaging Mission for the Environment) E2ES. While this module did not adhere to all the proposed guidelines from its inception, the lessons learned during its development served as the catalyst for the requirements and architectural directions proposed in the following sections.
+
+\subsection{Target Audience}
+The recommendations provided herein are intended for software implementation contractors Scientific Algorithms’ developers, Instrument Performance engineers, Simulator and Processor Engineers and Ground Segment System engineers. We want to provide tools for industry and expected standard for ESA Staff. By lowering the implementation complexity, we aim to provide ESA staff with more transparent tools for verification while reducing the development burden on industrial partners. 
+
+\section{Current E2E Module Architecture and Implementation}
+\begin{comment}
+There is full on software requirements as part of \cite{ESA_Generic_E2E_Req_2022}.
+
+There is some OpenMP library. Argue with that part. Do strong review of those requirements \cite{ESA_Generic_E2E_Req_2022}.
+
+They write the use OpenCL \cite{biblos_gmv_2020}.
+
+This section reviews current E2E simulation architectures used in ESA-like Earth observation workflows.
+It provides a high-level overview of typical architectural patterns and discusses their implications for development and operations.
+Key functional and non-functional requirements are identified, followed by a description of common development phases,
+from physical modelling and ATBD definition to implementation and testing.
+Finally, recurring limitations and pain points are summarized, including issues related to reproducibility, scalability,
+testing effort, and integration cost.
+\end{comment}
+
+\subsection{High level overview of achitecture}
+Architecture of E2ES in ESA can be described often first by functional meaning of modules, representing:
+The highest level architecture of E2ES within ESA can be described primarily by the functional role of its constituent modules:
+\begin{itemize}
+    \item Instrument Preformance Module - responsible for satelite and intrument behaviour
+    \item Ground Processor - L1 processing to L2 retrieval
+    \item Preformance Assesment Module - Compares input to retrived image
+\end{itemize}
+This high-level structure is further decomposed into several modules, whose dataflow is illustrated in Figure~\ref{fig:gmv_generic_dataflow}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{img/E2E_gmv_architecture.png}
+    \caption{Generic dataflow at highest level of architecture \cite{EO_E2E2_RefArch_2018}.}
+    \label{fig:gmv_generic_dataflow}
+\end{figure}
+While generic implementations of these modules exist, their specific implementations must always be tailored to meet mission-specific requirements. It is at this implementation level that this paper focuses its attention.
+
+\subsection{Common Development Phases}
+
+The development of E2ES software follows an evolutionary approach that spans the entire mission lifecycle, progressing from simplified feasibility models to detailed, mission-specific implementations \cite{ESA_E2E_WhitePaper_2025}. This progression can be characterized by several distinct stages:
+
+\begin{enumerate}
+    \item \textbf{Initial Generic Implementation (Phase 0/A/B1):} A generic simulator is developed to assess mission feasibility and L2 retrieval concepts. This early version typically employs simplified error models applied to Scene Generation outputs \cite{ESA_E2E_WhitePaper_2025}.
+
+    \item \textbf{Mission-Specific Development (Phase B2/C/D/E1):} The generic foundation is expanded into detailed, mission-specific implementations. Separate ATBDs are developed for individual modules (ISM, L1 processing, L2 retrieval), often by different industrial consortia. Software is then implemented according to these algorithmic specifications \cite{ESA_E2E_WhitePaper_2025}.
+
+    \item \textbf{Validation and Test Data Generation:} Throughout development, Test Data Sets (TDS) are created for systematic verification and validation of both individual modules and the integrated chain \cite{ESA_E2E_WhitePaper_2025}.
+
+    \item \textbf{On-Ground Calibration Support:} The E2ES supports On-Ground Calibration Activities, where measured data is used for characterizing instrument behavior and preparing final IOM module \cite{ESA_E2E_WhitePaper_2025}. (Question, what phase is OGC?, also I think this may need a bit of rephrasing)
+
+    \item \textbf{Operational Ground Processing (Phase E2):} The toolchain transitions to supporting Ground Processor maintenance, algorithm evolution, and anomaly investigation during long-term operations \cite{ESA_E2E_WhitePaper_2025}.
+\end{enumerate}
+
+This phased approach underscores the importance of maintainable, testable software architectures. The need for rapid algorithm iteration during development and subsequent long-term operational use creates tension between flexibility and performance—a challenge that motivates the architectural considerations discussed in later sections. \\
+
+\noindent
+At this point, it is important to recognize the computational nature of E2ES software. In most cases, these are image processing applications that handle very large datasets. Given that processing images of this scale is both memory-intensive and computationally demanding, these modules are typically implemented in highly performant C/C++ \cite{biblos_gmv_2020, EO_E2E2_RefArch_2018, ESA_Generic_E2E_Req_2022}, with parallelization support provided through OpenMP and OpenCL \cite{ESA_Generic_E2E_Req_2022, biblos_gmv_2020}.
+
+\noindent
+\subsection{Requirements}
+Functional and non-functionl requirements of the software are specified on ESA side by \cite{ESA_Generic_E2E_Req_2022}. Those importantly include: 
+Functional and non-functional requirements for E2ES software are specified by ESA in \cite{ESA_Generic_E2E_Req_2022}. Key requirements include:
+\begin{itemize}
+    \item E2E-ARC-GEN-080 - Code shall be parallelized
+    \item E2E-ENV-GEN-060 - Implementation in C or C++14 or newer
+        \begin{quote}
+            \textit{...it is explicitly required that in Phase B2/C/D the SW is implemented in a performant compiled language.}
+        \end{quote}
+    \item E2E-ENV-GEN-090 - Ground processing parallelization through the use of OpenMP
+    \item E2E-ENV-GEN-110 - GPU support through common APIs (e.g., OpenCL, CUDA)
+\end{itemize}
+
+\noindent
+\subsection{Recuring limitations and pain points}
+
+While the requirements outlined in Section 3.3 are understandable from a performance perspective, they often impose limitations that are not aligned with practical development realities. Performance is not the only consideration—development cost, ease of maintenance, and accessibility to domain experts are equally important. This disconnect is particularly evident in environments where ATBD preparation, software development, and validation are distributed across different locations and split between ESA and industrial partners \cite{ESA_E2E_WhitePaper_2025}. \\
+
+\noindent
+Several recurring challenges have been identified through recent mission developments and internal discussions, notably within the CHIME and LSTM teams, who have advocated for more flexible technological approaches, especially in context of Instrument Simulator:
+\begin{enumerate}
+    \item \textbf{Language and Ecosystem Constraints:} Python is currently the most popular programming language, with extensive support for scientific computing and a rich ecosystem of data science tools \cite{python_popularity, cern_collumnar_analysis_Feickert_2025}. While ground processing chains may require peak performance, achieving comparable performance for Instrument Simulation Modules (ISM) or Scene Generation Modules (SGM) using Python with modern libraries would significantly reduce development costs. This is especially relevant given that many system experts routinely use Python but lack deep C++ expertise.
+
+    \item \textbf{Underutilization of GPU Acceleration:} Although requirement E2E-ENV-GEN-110 mentions GPU support, real implementations often lack this capability despite the potential for orders-of-magnitude performance improvements. This was evident in early testing of a simple per-pixel uncertainty estimation pipeline for the LSTM and CHIME L1C products at ESA, where preliminary results showed processing time reductions of 3–4 orders of magnitude(not accounting for host-device data transfer) when comparing GPU processing (H100) to CPU processing (16-core Intel Xeon). While GPU usage can be limited by PCIe memory bandwidth \cite{image_processing_hardware_review_2024}, most use cases do not involve excessive data transfer and could benefit substantially from GPU-accelerated image processing \cite{perfromance_gpu_conv_2010, image_processing_hardware_review_2024}. Providing both CPU and GPU execution paths would offer flexibility for different operational scenarios, particularly when breakpoint file generation is not required during nominal runs.
+
+    \item \textbf{Inadequate Performance Monitoring:} Current implementations lack automated support for timeliness metrics and performance visualization. Simple, automated timing reports—supported by both C++ and Python—could facilitate performance assessment.
+
+    \item \textbf{Manual Validation and Error Analysis:} The absence of automated report generation for results analysis and numerical error propagation(which is completly unaccounted for) places unnecessary burden on validation teams. Automated tooling for these tasks would reduce manual effort and improve reproducibility.
+
+    \item \textbf{Hardware-Software Co-Design Neglect:} The hardware architecture of ground processing systems is as critical as the software implementation itself. Fast memory interfaces, optimized I/O strategies, and detached save threads could yield significant performance improvements but are rarely considered in current architectural discussions.
+
+    \item \textbf{Complexity Barriers for Domain Experts:} Overly complex implementations at the ISM level hinder the productivity of Instrument Performance engineers and system experts, who are responsible for validating the underlying physics. Simpler, more readable implementations—without sacrificing modeling accuracy—would enable these experts to work more efficiently.
+
+    \item \textbf{Documentation-Implementation Gap:} Traditional documentation can diverge from actual implementation, introducing validation risks. Self-documenting code—where clear structure, meaningful naming, and inline comments serve as the primary documentation—could eliminate this discrepancy. Recent advances in large language models (LLMs) for code analysis further support this approach, as LLMs can more easily parse and validate algorithmic correctness directly from well-written code, and could compare it to ATBD. While LLMs are already being explored at ESA for management and information tasks, they could also be leveraged to cross-check implementation against ATBD specifications, provided the code itself is sufficiently readable.
+
+    \item \textbf{Standardization and Version Control:} Standards for output formats, configuration files, and interface specifications are often scattered across multiple documents. Consolidating these in a common repository—complete with examples used for automated testing—would ensure that all stakeholders have access to the most recent, unified specifications. More systematic use of version control platforms such as GitLab would further enhance traceability and collaboration.
+\end{enumerate}
+
+These limitations collectively increase development time, reduce code transparency, and complicate validation efforts. Addressing them requires a shift toward more pragmatic architectural choices that balance performance with usability and long-term maintainability.
+
+\section{Alternative E2E Approaches: Lessons from Athena}
+This section presents a high-level comparison with E2E simulation practices adopted in large-scale scientific software systems,
+with particular focus on the ATLAS Athena framework.
+Architectural and process-level aspects such as modularity, interface discipline, data processing pipelines,
+and continuous integration strategies are discussed.
+Relevant lessons and transferable practices for ESA Earth observation simulators are highlighted.
+
+\begin{itemize}
+    \item CERN acknowalges need for python tooling for high level data anaylis \cite{cern_collumnar_analysis_Feickert_2025, athena_configuration}.
+    \item CERN Athena and ecosystem around it(we take lessons from ecosystem as well) are magnitues more complex and bigger then ESA mission E2ES.
+    \item High level configuration, in  this case bing equivalent to specific processing pipeline as in IOM, is done at Python level. It allows to assemble and customize components, where components could surely be used across missions.
+    \item Not only industry works on it, but academia from different universities, with huge discussions. ESA is very closed of system, which highly limits our capasity for discussions.
+    \item Testing, work and integration is done through gitlab and in opensource way, it is sure that opening the cotracts to scientific community could yield much decressed prices. At least unified git centric workflow would be needed, in that way, the code and progress can be monitored by ESA in real time.
+    \item CERN has it's own C++ specific library for managing visualization and doing everything with the objects, that is ROOT. In our case, it could yield significant bonuses to build library for that sort, which should be build on top of for example OpenCV or something, would be like a extened high performace numpy, with build in automated report generation, automated numerical error testing, logger timers etc in clean manner, which could allow for easy implementation of algorithms in C++, or being accessible straight from python by bindings.
+\end{itemize}
+
+\section{Python-Centric Prototype: Lessons from CHIME IOM}
+\begin{comment}
+This section briefly describes lightweight Python-based E2E simulation prototypes, including approaches based on
+NumPy and Dask for chunked and parallel data processing.
+Their strengths and limitations are discussed in the context of E2E simulation requirements.
+Building on this, a high-level architectural direction is outlined, emphasizing a Python-first interface combined with
+a performant backend, deterministic execution, (this was not done, but is suggested later in disscussions to be done: and built-in numerical testing and reporting capabilities)
+Implementation details are intentionally kept abstract.
+\end{comment}
+
+As part of a recent internship with the CHIME team, a prototype Instrument Optical Module (IOM) was developed using a Python-based stack centered on Dask, xarray, NumPy, and Numba. The objective was to provide a more flexible alternative to existing C++ implementations, particularly for supporting On-Ground Calibration Activities. The architecture emphasized readability and maintainability through a functional programming approach across all implementation levels.
+
+\subsection{Observed Strengths}
+The prototype demonstrated several advantages:
+\begin{enumerate}
+    \item \textbf{Memory Efficiency Through Chunking:} Dask's native chunking support enabled significant reductions in RAM requirements. Initial input images exceeding 50 GB—which could drive total memory consumption beyond 128 GB during processing—were successfully handled on virtual machines with only 32 GB of RAM. This capability would enable simulator deployment on standard computing infrastructure rather than requiring specialized high-memory systems.
+
+    \item \textbf{Algorithm Clarity:} Implementation using NumPy and scientific Python libraries resulted in substantially shorter and more transparent code compared to equivalent C++ implementations.
+
+    \item \textbf{Simplified Data Management:} Dask's lazy evaluation model streamlined checkpoint (BKP) file generation, consolidating multi-step save operations into single function calls.
+
+    \item \textbf{Comparable Performance:} Preliminary benchmarks on a representative test case showed processing times of 60–105 minutes for the Python implementation versus approximately 75 minutes for the nominal C++ version, suggesting performance parity for certain workloads. However, more comprehensive testing across diverse scenarios is required for validation.
+
+    \item \textbf{Extensibility:} Performance-critical functions can be selectively reimplemented in C++ or CUDA and integrated via Pybind11, enabling targeted optimization while preserving Python's high-level expressiveness.
+\end{enumerate}
+
+The OGC support was done similary to Athena configuration, where the in facto configuration file for OGC is the additional runner file which manages the configuraiton \cite{athena_configuration}. This approach is videly used, as allows for python extensibility and data analysis on top of it.
+
+\subsection{Identified Limitations}
+Several challenges emerged during development:
+\begin{enumerate}
+    \item \textbf{Error Diagnostics:} Dask generates verbose stack traces that can obscure the root cause of failures, complicating debugging efforts.
+    
+    \item \textbf{Backend Instabilities:} The netCDF4 and HDF5 backends occasionally failed when parallel workers attempted concurrent writes, requiring workarounds with zarr.
+    
+    \item \textbf{Overhead and Control:} Python's multiprocessing layer introduces overhead and limits low-level execution control compared to native parallelization frameworks like OpenMP.
+\end{enumerate}
+
+In general, this experiment suggested that especially with specific simple high performace library writen with C++ and CUDA and some utilities included, the development of the simulator could be vastly sped up, providing all the support needed.\\
+
+\noindent
+Similar library, but with C++ backednds could also be used, one that is specific for the usage here. Chunking would maybe not be necessary, as for ground processing purpouses, images are of significatnly smaller size then ones ingested by IOM.
+
+\subsection{Implications and Future Direction}
+This prototype demonstrates the viability of Python-based implementations for ISM-level modules. A purpose-built library combining Python's scientific ecosystem with selective C++/CUDA backends for performance-critical operations could accelerate development while maintaining adequate performance and improving code transparency for domain experts. \\
+
+\noindent
+For ground processing chains handling smaller datasets, emphasis should shift from chunking to GPU acceleration and optimized I/O. A unified library supporting both CPU and GPU paths, with standardized profiling and automated error reporting, would address key limitations identified in Section 3.4. \\
+
+\noindent
+The CHIME IOM prototype establishes a proof of concept for Python-centric E2ES architectures. Further work is needed to develop robust, production-ready frameworks. \\
+
+\section{Discussion and Recommendations}
+This section synthesizes the findings of the review and comparison.
+Architectural trade-offs between existing and alternative approaches are discussed, with emphasis on simplicity,
+testability, and reproducibility.
+Practical recommendations are provided for the design and evolution of E2E simulators in ESA Earth observation workflows,
+aimed at reducing development and verification cost.
+Limitations of the presented analysis and directions for future work are briefly outlined.
+
+Recommendations:
+\begin{itemize}
+    \item Quick and simple support for good timeliness metrics. This could be standardized and printed by the timer objects. Both C++ and python support that.
+    \item Results analysis through automated report generation.
+    \item Automated Numerical error report generation.
+    \item Initial tests for modules clearly suggest the vast time difference given by the access to the GPU for processing. While in file save heavy situation it may not be super optimal due to GPU VRAM -> memory bandwidth limintation \cite{}, hardware techniques exists to speed that up \cite{}. In our case it is best to provide user with both options, as often for preliminary scientific usecase BKP saving is not necessary.
+    \item In cases of fast delivery time needed, for example fire prevention for america, it is likely cheaper and more robust to not provide on satelite data analysis and AI algorithm, but do that early on in optimized processing toolchain at L1C, which with good optimal GPU implementation would be matter of seconds not tens of minutes. 
+    \item The hardware of the Ground processing is as important as software implementation, fast memmory for initial reading, perhaps even full on RAM interfaces with detached save threads could be of very significant improvment.
+    \item Simplicity of implemenetaiton at ISM level will lead to higher output of work of system engineers mentiond in the document.
+    \item Not simpler modeling, but simpler implementation and readability of that modeling.
+    \item Documentation in latex and usage of LLMs for automated algorithm validation. There is significant effort now at ESA in EO to use LLMs for managment and information purpouses, but in general, LLMs could also be used to ensure algorithic corectness as code is the easiest thing that can be parsed by LLM. The algorithimc ATBD shall also be updated.
+    \item One way to do the goal is have next in depth ATBD of code, but what if we can make the code document itself? Then we can eliminate the error that could happen between documentation-implementation.
+    \item The goal is not to avoid big run funstion with hundret's of lines, but provide ones that are clear to understand and use multiline function signatures when it helps with code readablity.
+\end{itemize}
+
+\section{Internal Physical Modeling Suggestions}
+The problem of simplifyling how the instrument optical module is modeled does not really seem to be very crucial. ATBD of IOM is not particularly complex, few non-linear effects are modeled at detector or FEE level, while rest, with exception of smile and keystone and transission from electrons into DN, are quiet simple, and are either one of those cathegories:
+\begin{itemize}
+    \item 1D resampling
+    \item 1D convolution for 2D list of arrays.
+    \item 2D convolution for 1D list of arrays.
+    \item Element wise mutiplication for one of dimentions.
+\end{itemize}
+
+\noindent
+This however always includes one of two things, either 1D resampling(linear interpolation from one system to other) or preparation of scene for always same initial grid of $[25.6, 25.4 ..., 0.0, ..., 25.6]$ with different margins.\\
+
+\noindent
+My suggestion would be at this point, to prepare some abstracted function which does that, and always does that with same margin, most of those functions don't really matter if we include 1 or 2 margin pixels physicly, or at least there is no way that it should matter, in case it does, that means that we are assuming non 0 out of scope that is measured, meaning this could acctualy lead to error. This could contribute to some non zero(likely much less then 1\%) error, it may even be that this is what is happening at telescope lsf, as we had some differences at border without margin, which would not make sense. \\
+
+\noindent
+Current version of OPSI resamples image as first step of detector, however this resampling does not really matter if we do it before Motion module. As SGM outputs some arbitrary image, spectral sampling, it can actually be resampled to one that matches oversampled binned scene as first thing in box, then we can just avoid the convolution with delta things all together, which would actually simplify the beviour of system vastly, as the function responsible for convolution and resampling is worst piece of code in there, which does some heavy level magic to get which indexes it should convolve around. \\
+
+\noindent
+So I would agree, that perhaps those few simple steps and just cleaner code would be easiest way to simplify the behaviour, the subset of physical modeling that is comperhesible to me is not that hard, and hard part is simple to implement and explained in ATBD. It is just that implementation is hard to understand often due to margin(which should not matter but matter) and how resamplings are done, and how the new samplings are prepared. Those can actually lead to huge errors which look good extreamly quickly. Make samplings simple again!
+
+\bibliographystyle{unsrt}
+\bibliography{bib}
+
+\end{document}
