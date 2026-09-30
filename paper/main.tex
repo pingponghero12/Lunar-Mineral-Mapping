@@ -48,7 +48,7 @@
 \begin{center}
 \begin{minipage}{\dimexpr\textwidth-60mm\relax}
 \fontsize{9pt}{11.5pt}\selectfont\noindent
-Compact lunar resource-mapping instruments require a defensible choice of spectral channels before detailed optical design. This study turns laboratory spectra into simple instrumentation baselines using wavelength-dependent response functions, three stated noise-sensitivity levels, and greedy D-optimal band selection. Seventeen priority minerals are represented in three configurations: a five-band mare-resource example, a long-wave-supported resource set, and seven functional groups covering all selected minerals. Every configuration is restricted to common measured spectral support; no spectrum is extrapolated. Band-count and minimum-spacing sweeps expose design sensitivity, while a small genetic search checks the greedy result. Non-negative unmixing of simulated mixtures supplies an empirical uncertainty test. Nominal abundance root-mean-square errors are \MareNominalRMSE, \LongwaveNominalRMSE, and \AllGroupsNominalRMSE\ percentage points for the three reference configurations, rising to \MareCombinedRMSE, \LongwaveCombinedRMSE, and \AllGroupsCombinedRMSE\ under combined noise, calibration-shift, and continuum-mismatch stress. The results define reproducible laboratory-domain baselines, not flight-instrument performance predictions. Thermal radiance, particulate mixing, spatial detectability, and environmental spectral variability remain explicit limitations.
+Compact lunar resource-mapping instruments require a defensible choice of spectral channels before detailed optical design. This study turns laboratory spectra into simple instrumentation baselines using wavelength-dependent response functions, three stated noise-sensitivity levels, and greedy D-optimal band selection. Four configurations separate a compact mare-resource problem, a long-wave-supported resource set, seven functional groups, and all 17 priority minerals treated individually. Every configuration is restricted to common measured spectral support; no spectrum is extrapolated. Band-count and minimum-spacing sweeps expose design sensitivity, while a small genetic search checks the greedy result. Non-negative unmixing of simulated mixtures supplies an empirical uncertainty test. The five-band mare design distinguishes its three resource minerals with nominal abundance root-mean-square error of \MareNominalRMSE\ percentage points. The 20-band individual-mineral design gives \IndividualNominalRMSE\ percentage points nominally and \IndividualCombinedRMSE\ under combined noise, calibration-shift, and continuum-mismatch stress. Fewer than 16 bands cannot independently identify all 17 fractions without further priors. The results define reproducible laboratory-domain baselines, not flight-instrument performance predictions.
 \end{minipage}
 \end{center}
 \vspace{5mm}
@@ -82,13 +82,13 @@ Lunar resource mapping joins two different questions: which materials are scient
 
 The Moon Mineralogy Mapper (M3) demonstrated calibrated imaging spectroscopy from 0.43 to \SI{3.0}{\micro\metre}, with signal-to-noise ratios above 400 and 100 for specified equatorial and polar reference radiances, respectively \cite{green2011m3}. Thermal instruments obey different physics. Diviner uses separate reflected-solar and emitted-radiance channels \cite{paige2010diviner}, while the proposed MIRORES concept specifically targets strong ore-mineral structure from 20 to \SI{40}{\micro\metre} with approximately 0.6--\SI{1.2}{\micro\metre} resolution \cite{ciazela2023mirores}. A baseline spanning these regimes must therefore be treated as a design sensitivity study, not as one already calibrated instrument.
 
-The present study combines D-optimal greedy selection, multiple mineral groupings, response and noise models, and an initial unmixing uncertainty check in three deliberately small cases. Its contribution is the reproducible method and the comparison between configurations. It does not claim an optimal flight payload or physical retrieval accuracy.
+The present study combines D-optimal greedy selection, multiple mineral groupings, response and noise models, and an initial unmixing uncertainty check in four deliberately small cases. Its contribution is the reproducible method and the comparison between compact group-level and mineral-specific configurations. It does not claim an optimal flight payload or physical retrieval accuracy.
 
 \section{Spectral data and study cases}
 
 The input is the existing RELAB collection \cite{pieters2004relab}. The selected files combine bidirectional VNIR and Fourier-transform infrared laboratory measurements. Each file is parsed using its recorded wavelength coordinate, and its checksum and support accompany the results. Interpolation outside measured support is prohibited. This matters because silently extending the last value would create flat, artificial FIR spectra and potentially artificial selected bands.
 
-Table~\ref{tab:cases} defines the three cases. The mare-resource case uses a fixed mare matrix with ilmenite, troilite, and apatite. The long-wave case includes only samples measured through \SI{40}{\micro\metre}. The final case uses seven functional composites to include all 17 selected minerals without pretending that fewer than ten bands can independently retrieve 17 abundances. Composite members are averaged with the fixed weights in the public configuration.
+Table~\ref{tab:cases} defines the four cases. The mare-resource case uses a fixed mare matrix while retaining ilmenite, troilite, and apatite as separate targets. The long-wave case includes only samples measured through \SI{40}{\micro\metre}. The grouped case represents all 17 selected minerals through seven functional composites. The final diagnostic removes this grouping and estimates all 17 minerals individually with 20 selected bands. Composite members and mixture distributions use the fixed weights in the public configuration.
 
 \begin{table*}[t]
 \caption{Configurations used in the study. The upper wavelength is set by common measured support, not by extrapolation.}
@@ -101,6 +101,7 @@ Case & Components & Range (\si{\micro\metre}) & Content\\
 Mare resources & 4 & \MareRange & Mare matrix (anorthite, pigeonite, orthopyroxene, fayalite), ilmenite, troilite, apatite\\
 Long-wave resources & 6 & \LongwaveRange & Mare matrix, ilmenite, pyrite, magnetite, apatite, sulfate assemblage\\
 All priority groups & 7 & \AllGroupsRange & Oxides/oxyhydroxide, sulfides, mafic silicates, feldspar, phosphate, sulfates, silica\\
+Individual minerals & 17 & \IndividualRange & Three sulfides, three mafic silicates, anorthite, four oxides/oxyhydroxides, apatite, four sulfates, quartz\\
 \bottomrule
 \end{tabularx}
 \end{table*}
@@ -164,7 +165,7 @@ Adjacent filters are controlled by
  |\lambda_i-\lambda_j|\geq \frac{s}{2}
  (\mathrm{FWHM}_i+\mathrm{FWHM}_j).
 \end{equation}
-The sweep uses $s=1,2,4$: non-overlapping half-maximum intervals and two progressively conservative separations. Band counts of 4, 5, 6, 8, and 10 are tested. A small deterministic genetic search \cite{holland1975adaptation}, initialised with the greedy design, uses the identical objective and constraints for each reference case. It is an empirical check, not proof of global optimality.
+The sweep uses $s=1,2,4$: non-overlapping half-maximum intervals and two progressively conservative separations. Band counts of 4, 5, 6, 8, 10, 12, 16, and 20 are tested. A small deterministic genetic search \cite{holland1975adaptation}, initialised with the greedy design, uses the identical objective and constraints for each reference case. It is an empirical check, not proof of global optimality.
 
 \subsection{Uncertainty and mixture check}
 
@@ -174,12 +175,12 @@ For an easier end-to-end interpretation, 300 fixed-seed mixtures are drawn from 
 
 \section{Results}
 
-Figure~\ref{fig:designs} shows the three selected reference designs. The five-band mare case provides the compact baseline, while the two more complex groupings use eight bands. Selected centres are listed in Table~\ref{tab:results}; exact values for every sweep point are supplied as CSV.
+Figure~\ref{fig:designs} shows the four selected reference designs. The five-band mare case provides the compact target-specific baseline, the intermediate cases use eight bands, and the individual-mineral diagnostic uses 20. Selected centres are listed in Table~\ref{tab:results}; exact values for every sweep point are supplied as CSV.
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{../outputs/figures/three_case_designs.png}
-\caption{Measured component spectra and selected reference bands. Shaded widths show the adopted Gaussian FWHM. The first and third cases stop near \SI{25}{\micro\metre} because at least one constituent spectrum stops there; only the supported subset is extended to \SI{40}{\micro\metre}.}
+\caption{Measured component spectra and selected reference bands. Shaded widths show the adopted Gaussian FWHM. The mare, grouped, and individual-mineral cases stop near \SI{25}{\micro\metre} because at least one constituent spectrum stops there; only the supported long-wave subset extends to \SI{40}{\micro\metre}.}
 \label{fig:designs}
 \end{figure*}
 
@@ -194,11 +195,12 @@ Case & Bands & Range (\si{\micro\metre}) & Band centres (\si{\micro\metre}) & No
 Mare resources & \MareBandCount & \MareRange & \MareBands & \MareNominalRMSE\% & \MareCombinedRMSE\%\\
 Long-wave resources & \LongwaveBandCount & \LongwaveRange & \LongwaveBands & \LongwaveNominalRMSE\% & \LongwaveCombinedRMSE\%\\
 All priority groups & \AllGroupsBandCount & \AllGroupsRange & \AllGroupsBands & \AllGroupsNominalRMSE\% & \AllGroupsCombinedRMSE\%\\
+Individual minerals & \IndividualBandCount & \IndividualRange & \IndividualBands & \IndividualNominalRMSE\% & \IndividualCombinedRMSE\%\\
 \bottomrule
 \end{tabularx}
 \end{table*}
 
-Increasing band count reduces linearised uncertainty in all cases (Fig.~\ref{fig:sensitivity}, left), but the improvement is not uniform. Four bands are sufficient for full rank in the four-component mare case. The six-component case requires at least five, and the seven-group case at least six. Designs below these limits may still classify spectra but cannot uniquely estimate every independent weight in this linear model.
+Increasing band count reduces linearised uncertainty in all cases (Fig.~\ref{fig:sensitivity}, left), but the improvement is not uniform. Four bands are sufficient for full rank in the four-component mare case. The six-component case requires at least five, the seven-group case at least six, and the 17-mineral case at least 16. Designs below these limits may still classify spectra but cannot uniquely estimate every independent weight in this linear model.
 
 \begin{figure*}[t]
 \centering
@@ -214,9 +216,9 @@ Increasing band count reduces linearised uncertainty in all cases (Fig.~\ref{fig
 
 The spacing sweep changes the eight-band information objective only weakly, demonstrating that the main solutions do not depend on densely packing adjacent FIR filters. In the mare case, the stricter constraint removes some closely placed VNIR candidates and causes a small objective loss. This is precisely why the constraint is exposed rather than hidden in one fixed minimum-distance number.
 
-The signed objective difference between the greedy and genetic results was \MareGreedyGap\%, \LongwaveGreedyGap\%, and \AllGroupsGreedyGap\% for the mare, long-wave, and all-priority cases, respectively. Each negative value indicates a small improvement by the genetic search, which was seeded with the greedy solution. All improvements were below 0.2\%. This audit does not establish global optimality; it only shows that the two simple searches gave nearly equivalent objective values under the same assumptions.
+The signed objective difference between the greedy and genetic results was \MareGreedyGap\%, \LongwaveGreedyGap\%, \AllGroupsGreedyGap\%, and \IndividualGreedyGap\% for the mare, long-wave, grouped, and individual-mineral cases, respectively. Each negative value indicates a small improvement by the genetic search, which was seeded with the greedy solution. All improvements were below 0.2\%. This audit does not establish global optimality; it only shows that the two simple searches gave nearly equivalent objective values under the same assumptions.
 
-Figure~\ref{fig:unmixing} gives the direct mixture test. Nominal RMSE is lowest for the four-component mare case and highest for the seven-group case. Calibration-only degradation remains limited, while combined stressed noise and mismatch approximately doubles or triples error. The full-group result is therefore useful as a baseline, but weaker than the smaller mission-specific configurations.
+Figure~\ref{fig:unmixing} gives the direct mixture test. Nominal RMSE is \MareNominalRMSE\ percentage points for the mare case and \IndividualNominalRMSE\ for the 17-mineral case. Calibration-only degradation remains limited, while combined stressed noise and mismatch increases every error. The 20-band result demonstrates mineral-specific separability in this controlled linear problem; it does not establish corresponding field detectability.
 
 \begin{figure}[t]
 \centering
@@ -233,7 +235,7 @@ First, laboratory reflectance contrast is not at-sensor lunar radiance. A comple
 
 Second, linear mixtures and fixed composites omit intimate particulate mixing, multiple scattering, grain-size effects, glass and agglutinates, space weathering, temperature-dependent spectral shifts, and endmember variability \cite{hapke2012theory}. The continuum perturbation merely tests modest mismatch; it cannot be interpreted as a physical model of those processes. Similarly, room-condition RELAB spectra do not represent every lunar environmental state.
 
-Third, the all-priority case retrieves seven functional groups, not 17 individual mineral abundances. Fewer than ten channels cannot generally identify 17 independent fractions. The grouping is appropriate only when the mission objective accepts class-level discrimination. Mineral-specific retrieval needs more bands, stronger priors, or a narrower target set.
+Third, the eight-band all-priority case retrieves seven functional groups, whereas the added 20-band diagnostic keeps all 17 mineral abundances separate. At least 16 independent measurements are required to identify 17 unit-sum fractions in the present unconstrained linear formulation. The 20-band result is therefore an identifiability demonstration, not evidence that every mineral can be detected at operationally useful abundance. Compact payloads require narrower target lists, scientifically justified grouping, or stronger priors.
 
 Fourth, spectral support differs. Troilite, pyrrhotite, akaganeite, hematite, and the selected quartz measurements restrict relevant cases to approximately \SI{25}{\micro\metre}. They are not extrapolated to \SI{40}{\micro\metre}. The separate long-wave case demonstrates the full interval only for samples that actually cover it.
 
@@ -241,7 +243,7 @@ Finally, the study contains no spatial scene, orebody geometry, thermal model, o
 
 \section{Conclusion}
 
-A short, reproducible method converts measured laboratory spectra into configuration-specific lunar spectral baselines. Three cases cover a compact mare example, a genuine 0.4--\SI{40}{\micro\metre} supported subset, and all 17 priority minerals as seven functional groups. Support auditing prevents artificial FIR bands; band-count, noise, and spacing sweeps show when a design becomes identifiable and how sensitive it is to engineering assumptions. Five bands support the simple mare example, while the broader grouped cases benefit from eight. Under the chosen synthetic mixtures, nominal errors remain at a few percentage points and rise clearly under combined stress. These values are useful for comparing concepts, not for claiming flight performance. The next defensible step is to replace the stated sensitivity envelopes with one instrument's radiance and calibration model, then test the bands on temperature- and grain-size-matched lunar analogue measurements.
+A short, reproducible method converts measured laboratory spectra into configuration-specific lunar spectral baselines. Four cases cover a compact mare example, a genuine 0.4--\SI{40}{\micro\metre} supported subset, all 17 priority minerals as seven functional groups, and all 17 retained individually. Support auditing prevents artificial FIR bands; band-count, noise, and spacing sweeps show when a design becomes identifiable and how sensitive it is to engineering assumptions. Five bands distinguish the mare matrix, ilmenite, troilite, and apatite, while the complete mineral-specific problem requires at least 16 and uses 20 bands in the reference design. Under the chosen synthetic mixtures, nominal errors remain at a few percentage points and rise clearly under combined stress. These values compare concepts rather than claim flight performance. The next defensible step is to replace the sensitivity envelopes with one instrument's radiance and calibration model, then test the bands on temperature- and grain-size-matched lunar analogue measurements.
 
 \section*{Data and code availability}
 

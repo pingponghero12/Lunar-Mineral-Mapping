@@ -2,7 +2,7 @@ seed: 20260930
 spectral_grid_step_um: 0.005
 candidate_step_um: 0.02
 analysis_range_um: [0.4, 40.0]
-band_counts: [4, 5, 6, 8, 10]
+band_counts: [4, 5, 6, 8, 10, 12, 16, 20]
 spacing_factors: [1.0, 2.0, 4.0]
 reference_band_count: 8
 reference_spacing_factor: 1.0
@@ -115,4 +115,46 @@ cases:
         Gypsum_BKR1JBE64A.txt: 0.25
         Anhydrite_BKR1JB641A.txt: 0.25
       Silica:
+        Quartz_BKR1DH003.txt: 1.0
+
+  individual_priority_minerals:
+    label: Individual priority minerals
+    description: All 17 priority minerals retained as separate endmembers.
+    reference_band_count: 20
+    max_wavelength_um: 24.8
+    dirichlet_alpha: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    components:
+      Ilmenite:
+        Ilmenite_BKR1LR222.txt: 1.0
+      Pyrite:
+        Pyrite_BKR1ZL014.txt: 1.0
+      Troilite:
+        Troilite_LATB49.txt: 1.0
+      Pyrrhotite:
+        Pyrrhotite_LAPY01.txt: 1.0
+      Fayalite:
+        Fayalite_BKR1LR212.txt: 1.0
+      Orthopyroxene:
+        Orthopyroxene_BKR1PE011.txt: 1.0
+      Pigeonite:
+        Pigeonite_BKR1DD055.txt: 1.0
+      Anorthite:
+        Anorthite_BKR1LR217.txt: 1.0
+      Hematite:
+        Hematite_BKR1AV008.txt: 1.0
+      Magnetite:
+        Magnetite_BKR1DD104.txt: 1.0
+      Akaganeite:
+        Akaganeite_397F212D.txt: 1.0
+      Apatite:
+        Apatite_BKR1JB274A.txt: 1.0
+      Alunite:
+        Alunite_BKR1JB444.txt: 1.0
+      Jarosite:
+        Jarosite_BKR1JB440.txt: 1.0
+      Gypsum:
+        Gypsum_BKR1JBE64A.txt: 1.0
+      Anhydrite:
+        Anhydrite_BKR1JB641A.txt: 1.0
+      Quartz:
         Quartz_BKR1DH003.txt: 1.0

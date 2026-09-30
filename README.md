@@ -20,11 +20,12 @@ baseline study, not a flight-instrument model or an orbital mineral map.
    squares, and projection onto the abundance simplex.
 
 No spectrum is extrapolated. A case stops where any required constituent stops.
-The three study cases are defined in [`configs/study.yaml`](configs/study.yaml):
+The four study cases are defined in [`configs/study.yaml`](configs/study.yaml):
 
 - a five-band mare-resource example;
 - a six-component set with genuine measured support to 40 micrometres; and
-- seven functional groups covering all 17 priority minerals.
+- seven functional groups covering all 17 priority minerals; and
+- a 20-band diagnostic retaining all 17 minerals as separate endmembers.
 
 ## Reproduce the study
 
@@ -67,9 +68,10 @@ The MIR and FIR noise levels are sensitivity assumptions because an at-sensor
 radiance model and a particular detector have not been selected. Laboratory
 reflectance does not include lunar temperature, illumination, particulate
 mixing, grain-size effects, space weathering, or spatial detectability. The
-all-priority case estimates seven functional groups, not 17 independent mineral
-abundances. The small genetic search is a cross-check, not a proof of global
-optimality. These boundaries are discussed explicitly in the manuscript.
+eight-band all-priority case estimates seven functional groups, while the
+mineral-specific diagnostic uses 20 bands to estimate all 17 abundances. The
+small genetic search is a cross-check, not a proof of global optimality. These
+boundaries are discussed explicitly in the manuscript.
 
 The older scripts under `relab/` are retained for provenance. The packaged
 workflow under `lunar_band_design/` is the implementation used for the reported

@@ -43,6 +43,7 @@ def _write_macros(path: Path, summary: dict) -> None:
         ("mare_resources", "Mare"),
         ("extended_longwave", "Longwave"),
         ("all_priority_groups", "AllGroups"),
+        ("individual_priority_minerals", "Individual"),
     ]:
         case = cases[key]
         centers = ", ".join(f"{value:.2f}" for value in case["centers_um"])
