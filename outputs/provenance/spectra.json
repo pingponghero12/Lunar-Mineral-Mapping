@@ -1,0 +1,121 @@
+{
+  "Akaganeite_397F212D.txt": {
+    "file": "relab/filtered_minerals/Akaganeite_397F212D.txt",
+    "minimum_wavelength_um": 0.35,
+    "maximum_wavelength_um": 24.9237,
+    "sample_count": 2169,
+    "sha256": "4ccddd3da6cc62eecd9c8c22ce8ef2a8789417a330de516e5db2fefc4e9835ec"
+  },
+  "Alunite_BKR1JB444.txt": {
+    "file": "relab/filtered_minerals/Alunite_BKR1JB444.txt",
+    "minimum_wavelength_um": 0.3,
+    "maximum_wavelength_um": 199.4376,
+    "sample_count": 4163,
+    "sha256": "5418d5c1c56417ad7bbe0cf035115e635add345749269877cf6cd381249b2ffe"
+  },
+  "Anhydrite_BKR1JB641A.txt": {
+    "file": "relab/filtered_minerals/Anhydrite_BKR1JB641A.txt",
+    "minimum_wavelength_um": 0.32,
+    "maximum_wavelength_um": 49.8594,
+    "sample_count": 3879,
+    "sha256": "7b5c4426427cb446d62a8279eabb91f8a9fbd7d40bb5d37457a8bb4f2d1d8959"
+  },
+  "Anorthite_BKR1LR217.txt": {
+    "file": "relab/filtered_minerals/Anorthite_BKR1LR217.txt",
+    "minimum_wavelength_um": 0.28,
+    "maximum_wavelength_um": 49.8594,
+    "sample_count": 2384,
+    "sha256": "2ac978faf42447bb2469dba170a097132def720d4066021259dd5a4106603a9c"
+  },
+  "Apatite_BKR1JB274A.txt": {
+    "file": "relab/filtered_minerals/Apatite_BKR1JB274A.txt",
+    "minimum_wavelength_um": 0.3,
+    "maximum_wavelength_um": 99.7188,
+    "sample_count": 4137,
+    "sha256": "28425c9fb070aea87a18b66f1b3f7f261985151e097bfd3ec9ae4b147ebb1933"
+  },
+  "Fayalite_BKR1LR212.txt": {
+    "file": "relab/filtered_minerals/Fayalite_BKR1LR212.txt",
+    "minimum_wavelength_um": 0.28,
+    "maximum_wavelength_um": 49.8594,
+    "sample_count": 2384,
+    "sha256": "a321b5e18485fa7d5368ebf9cbe606c7d411c6ff4e66e7a48619aadae618d022"
+  },
+  "Gypsum_BKR1JBE64A.txt": {
+    "file": "relab/filtered_minerals/Gypsum_BKR1JBE64A.txt",
+    "minimum_wavelength_um": 0.3,
+    "maximum_wavelength_um": 99.7188,
+    "sample_count": 5830,
+    "sha256": "b190195acead04e95df7c8ec8228dda19e8a8bf3b0dc1994ca989d9320247dbe"
+  },
+  "Hematite_BKR1AV008.txt": {
+    "file": "relab/filtered_minerals/Hematite_BKR1AV008.txt",
+    "minimum_wavelength_um": 0.3,
+    "maximum_wavelength_um": 25.05016,
+    "sample_count": 3087,
+    "sha256": "b76bf266490988ac3c3366b89191b9637548a86c3e7b548e6ec8b9cbd4a0a08a"
+  },
+  "Ilmenite_BKR1LR222.txt": {
+    "file": "relab/filtered_minerals/Ilmenite_BKR1LR222.txt",
+    "minimum_wavelength_um": 0.28,
+    "maximum_wavelength_um": 49.8594,
+    "sample_count": 2384,
+    "sha256": "771b86e6c222729aa1c40bfbbc50a23e47e78d8dd5c71d7c5cbc687039320d50"
+  },
+  "Jarosite_BKR1JB440.txt": {
+    "file": "relab/filtered_minerals/Jarosite_BKR1JB440.txt",
+    "minimum_wavelength_um": 0.3,
+    "maximum_wavelength_um": 199.4376,
+    "sample_count": 4163,
+    "sha256": "f462ff05d1e655f997688e983132ca5c77ede3699ecf6a26879f5fe646e90940"
+  },
+  "Magnetite_BKR1DD104.txt": {
+    "file": "relab/filtered_minerals/Magnetite_BKR1DD104.txt",
+    "minimum_wavelength_um": 0.3,
+    "maximum_wavelength_um": 49.8594,
+    "sample_count": 2380,
+    "sha256": "f44002abb63c419294fc85bf30814e28020cb38d465a237347a340984b19423f"
+  },
+  "Orthopyroxene_BKR1PE011.txt": {
+    "file": "relab/filtered_minerals/Orthopyroxene_BKR1PE011.txt",
+    "minimum_wavelength_um": 0.3,
+    "maximum_wavelength_um": 49.8594,
+    "sample_count": 2443,
+    "sha256": "c1ede9106661074dd2a813bf75da05a94597da8770c10a4077c63d186bab53b0"
+  },
+  "Pigeonite_BKR1DD055.txt": {
+    "file": "relab/filtered_minerals/Pigeonite_BKR1DD055.txt",
+    "minimum_wavelength_um": 0.3,
+    "maximum_wavelength_um": 49.8594,
+    "sample_count": 2368,
+    "sha256": "37f279fb82f4b65018fef8c78d3157df150aab90128246d776fdcdf5f470db72"
+  },
+  "Pyrite_BKR1ZL014.txt": {
+    "file": "relab/filtered_minerals/Pyrite_BKR1ZL014.txt",
+    "minimum_wavelength_um": 0.32,
+    "maximum_wavelength_um": 49.8594,
+    "sample_count": 2190,
+    "sha256": "77d29a16a4074e17af689b5a039e5f997f5c846bfde4de9251109e9ffb23d641"
+  },
+  "Pyrrhotite_LAPY01.txt": {
+    "file": "relab/filtered_minerals/Pyrrhotite_LAPY01.txt",
+    "minimum_wavelength_um": 0.3,
+    "maximum_wavelength_um": 25.9207,
+    "sample_count": 2314,
+    "sha256": "42448ddc92dc7747aae5e2d5f74f6f16b74553bb38a01c14bb9c5ad5bbe2d4ae"
+  },
+  "Quartz_BKR1DH003.txt": {
+    "file": "relab/filtered_minerals/Quartz_BKR1DH003.txt",
+    "minimum_wavelength_um": 0.32,
+    "maximum_wavelength_um": 25.0502,
+    "sample_count": 2123,
+    "sha256": "f053300cdd60f653d0eff9beaef9ecb1718790e2f03a575670889e802fdbd69c"
+  },
+  "Troilite_LATB49.txt": {
+    "file": "relab/filtered_minerals/Troilite_LATB49.txt",
+    "minimum_wavelength_um": 0.32,
+    "maximum_wavelength_um": 25.9207,
+    "sample_count": 2071,
+    "sha256": "11937d5e79cabb76e6af95b9e167770d6f137243b60dde976682247aae6a32d2"
+  }
+}

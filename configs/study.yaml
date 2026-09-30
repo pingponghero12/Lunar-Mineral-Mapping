@@ -1,0 +1,118 @@
+seed: 20260930
+spectral_grid_step_um: 0.005
+candidate_step_um: 0.02
+analysis_range_um: [0.4, 40.0]
+band_counts: [4, 5, 6, 8, 10]
+spacing_factors: [1.0, 2.0, 4.0]
+reference_band_count: 8
+reference_spacing_factor: 1.0
+monte_carlo_trials: 300
+
+# These are sensitivity cases, not flight-instrument predictions. The VNIR
+# endpoints are bracketed by published M3 polar/equatorial performance; the
+# MIR/FIR values deliberately span a broad design envelope.
+noise_profiles:
+  optimistic:
+    vnir_snr: 400
+    mir_snr: 200
+    fir_snr: 100
+  reference:
+    vnir_snr: 200
+    mir_snr: 100
+    fir_snr: 50
+  stressed:
+    vnir_snr: 100
+    mir_snr: 50
+    fir_snr: 20
+
+stress_tests:
+  nominal:
+    noise_profile: reference
+    center_shift_fwhm: 0.0
+    continuum_sigma: 0.0
+  calibration:
+    noise_profile: reference
+    center_shift_fwhm: 0.10
+    continuum_sigma: 0.02
+  combined:
+    noise_profile: stressed
+    center_shift_fwhm: 0.25
+    continuum_sigma: 0.05
+
+cases:
+  mare_resources:
+    label: Mare resources
+    description: Compact baseline with a mare matrix and three resource targets.
+    reference_band_count: 5
+    max_wavelength_um: 25.8
+    dirichlet_alpha: [14.0, 1.5, 0.8, 0.7]
+    components:
+      Mare basalt matrix:
+        Anorthite_BKR1LR217.txt: 0.40
+        Pigeonite_BKR1DD055.txt: 0.35
+        Orthopyroxene_BKR1PE011.txt: 0.15
+        Fayalite_BKR1LR212.txt: 0.10
+      Ilmenite:
+        Ilmenite_BKR1LR222.txt: 1.0
+      Troilite:
+        Troilite_LATB49.txt: 1.0
+      Apatite:
+        Apatite_BKR1JB274A.txt: 1.0
+
+  extended_longwave:
+    label: Long-wave-supported resources
+    description: A 0.4--40 micrometre case restricted to samples with measured support throughout.
+    reference_band_count: 8
+    max_wavelength_um: 40.0
+    dirichlet_alpha: [12.0, 1.2, 0.8, 0.8, 0.5, 1.0]
+    components:
+      Mare basalt matrix:
+        Anorthite_BKR1LR217.txt: 0.40
+        Pigeonite_BKR1DD055.txt: 0.35
+        Orthopyroxene_BKR1PE011.txt: 0.15
+        Fayalite_BKR1LR212.txt: 0.10
+      Ilmenite:
+        Ilmenite_BKR1LR222.txt: 1.0
+      Pyrite:
+        Pyrite_BKR1ZL014.txt: 1.0
+      Magnetite:
+        Magnetite_BKR1DD104.txt: 1.0
+      Apatite:
+        Apatite_BKR1JB274A.txt: 1.0
+      Sulfate assemblage:
+        Alunite_BKR1JB444.txt: 0.25
+        Jarosite_BKR1JB440.txt: 0.25
+        Gypsum_BKR1JBE64A.txt: 0.25
+        Anhydrite_BKR1JB641A.txt: 0.25
+
+  all_priority_groups:
+    label: All priority groups
+    description: Seven functional composites covering every selected priority mineral.
+    reference_band_count: 8
+    max_wavelength_um: 24.8
+    dirichlet_alpha: [3.0, 2.0, 7.0, 8.0, 0.8, 2.0, 1.0]
+    components:
+      Oxides and oxyhydroxide:
+        Ilmenite_BKR1LR222.txt: 0.25
+        Hematite_BKR1AV008.txt: 0.25
+        Magnetite_BKR1DD104.txt: 0.25
+        Akaganeite_397F212D.txt: 0.25
+      Sulfides:
+        Pyrite_BKR1ZL014.txt: 0.3333333333
+        Troilite_LATB49.txt: 0.3333333333
+        Pyrrhotite_LAPY01.txt: 0.3333333334
+      Mafic silicates:
+        Fayalite_BKR1LR212.txt: 0.3333333333
+        Orthopyroxene_BKR1PE011.txt: 0.3333333333
+        Pigeonite_BKR1DD055.txt: 0.3333333334
+      Feldspar:
+        Anorthite_BKR1LR217.txt: 1.0
+      Phosphate:
+        Apatite_BKR1JB274A.txt: 1.0
+      Sulfates:
+        Alunite_BKR1JB444.txt: 0.25
+        Jarosite_BKR1JB440.txt: 0.25
+        Gypsum_BKR1JBE64A.txt: 0.25
+        Anhydrite_BKR1JB641A.txt: 0.25
+      Silica:
+        Quartz_BKR1DH003.txt: 1.0

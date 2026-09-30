@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lunar-band-design"
+version = "0.1.0"
+description = "Reproducible spectral-band baseline study for lunar resource mapping"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Jakub Leś"},
+  {name = "Manfred Gawlas"},
+]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.13",
+  "pandas>=2.0",
+  "matplotlib>=3.8",
+  "PyYAML>=6.0",
+]
+
+[project.scripts]
+lunar-band-study = "lunar_band_design.study:main"
+
+[tool.setuptools.packages.find]
+include = ["lunar_band_design*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

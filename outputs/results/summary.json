@@ -1,0 +1,119 @@
+{
+  "seed": 20260930,
+  "unique_spectrum_count": 17,
+  "default_reference_band_count": 8,
+  "reference_spacing_factor": 1.0,
+  "reference_cases": {
+    "mare_resources": {
+      "label": "Mare resources",
+      "components": [
+        "Mare basalt matrix",
+        "Ilmenite",
+        "Troilite",
+        "Apatite"
+      ],
+      "band_count": 5,
+      "range_um": [
+        0.4,
+        25.800000000000022
+      ],
+      "centers_um": [
+        0.5800000000000002,
+        0.6600000000000003,
+        0.9600000000000005,
+        2.720000000000002,
+        12.840000000000012
+      ],
+      "fwhm_um": [
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.25258823529411795
+      ],
+      "nominal_rmse": 0.01031986339172156,
+      "combined_rmse": 0.05197714803998236,
+      "ga_gap_fraction": -0.0018678818416414196
+    },
+    "extended_longwave": {
+      "label": "Long-wave-supported resources",
+      "components": [
+        "Mare basalt matrix",
+        "Ilmenite",
+        "Pyrite",
+        "Magnetite",
+        "Apatite",
+        "Sulfate assemblage"
+      ],
+      "band_count": 8,
+      "range_um": [
+        0.4,
+        40.000000000000036
+      ],
+      "centers_um": [
+        0.9600000000000005,
+        1.2200000000000006,
+        2.940000000000002,
+        7.740000000000007,
+        8.340000000000007,
+        12.700000000000012,
+        14.920000000000014,
+        28.100000000000023
+      ],
+      "fwhm_um": [
+        0.01,
+        0.01,
+        0.01,
+        0.1475882352941178,
+        0.1599411764705884,
+        0.24970588235294144,
+        0.29541176470588265,
+        0.8430000000000006
+      ],
+      "nominal_rmse": 0.011590005139771977,
+      "combined_rmse": 0.026662938469673204,
+      "ga_gap_fraction": -0.0008101995984800956
+    },
+    "all_priority_groups": {
+      "label": "All priority groups",
+      "components": [
+        "Oxides and oxyhydroxide",
+        "Sulfides",
+        "Mafic silicates",
+        "Feldspar",
+        "Phosphate",
+        "Sulfates",
+        "Silica"
+      ],
+      "band_count": 8,
+      "range_um": [
+        0.4,
+        24.80000000000002
+      ],
+      "centers_um": [
+        0.5400000000000001,
+        0.9600000000000005,
+        1.3000000000000007,
+        2.940000000000002,
+        6.140000000000006,
+        8.060000000000008,
+        12.620000000000012,
+        15.460000000000013
+      ],
+      "fwhm_um": [
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.11464705882352955,
+        0.15417647058823547,
+        0.24805882352941205,
+        0.30652941176470616
+      ],
+      "nominal_rmse": 0.02643945565237373,
+      "combined_rmse": 0.045209055052429475,
+      "ga_gap_fraction": -0.00024360822161625804
+    }
+  },
+  "interpretation": "Laboratory-domain sensitivity study; not an at-sensor lunar radiance or flight-instrument performance prediction."
+}
